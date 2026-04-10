@@ -3,9 +3,11 @@ export const Hero = () => {
     <section class="hero-slider hero-style" id="home">
         <div class="swiper-container mySwiper">
             <div class="swiper-wrapper">
-                <!-- Slide 1 -->
+                <!-- Slide 1 (LCP - Eager Loading) -->
                 <div class="swiper-slide">
-                    <div class="slide-inner background-img" style="background-image: url('https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=1920&auto=format&fm=webp');">
+                    <div class="slide-inner">
+                        <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=1440&auto=format&fm=webp" 
+                             alt="Sahul TNPSC Circle Training" class="hero-bg-img" fetchpriority="high" decoding="sync">
                         <div class="gradient-overlay"></div>
                         <div class="container">
                             <div class="row">
@@ -24,9 +26,11 @@ export const Hero = () => {
                         </div>
                     </div>
                 </div>
-                <!-- Slide 2 -->
+                <!-- Slide 2 (Lazy Loading) -->
                 <div class="swiper-slide">
-                    <div class="slide-inner background-img" style="background-image: url('https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=1920&auto=format&fm=webp');">
+                    <div class="slide-inner">
+                        <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=1440&auto=format&fm=webp" 
+                             alt="Library Study Sessions" class="hero-bg-img" loading="lazy" decoding="async">
                         <div class="gradient-overlay"></div>
                         <div class="container">
                             <div class="row">
@@ -45,9 +49,11 @@ export const Hero = () => {
                         </div>
                     </div>
                 </div>
-                <!-- Slide 3 -->
+                <!-- Slide 3 (Lazy Loading) -->
                 <div class="swiper-slide">
-                    <div class="slide-inner background-img" style="background-image: url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1920&auto=format&fm=webp');">
+                    <div class="slide-inner">
+                        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1440&auto=format&fm=webp" 
+                             alt="Expert Faculty Mentorship" class="hero-bg-img" loading="lazy" decoding="async">
                         <div class="gradient-overlay"></div>
                         <div class="container">
                             <div class="row">
