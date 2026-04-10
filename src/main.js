@@ -134,9 +134,8 @@ function render() {
         window.scrollTo(0, 0);
     }
 
-    // Trigger reveal for visible elements
-    setTimeout(handleReveal, 150);
-    handleNavbarScroll(); // Ensure header state is correct on render
+    // Re-initialize dynamic behaviors
+    init();
 }
 
 // Initial render
@@ -179,7 +178,7 @@ document.addEventListener('click', function(e) {
             
             // Header height + padding offset
             const offset = window.innerWidth <= 991 ? 70 : 90;
-            const targetPos = target.getBoundingClientRect().top + window.pageYOffset - offset - 20;
+            const targetPos = target.getBoundingClientRect().top + window.scrollY - offset - 20;
 
             window.scrollTo({
                 top: targetPos,
@@ -189,41 +188,56 @@ document.addEventListener('click', function(e) {
             // Update hash without jumping
             history.pushState(null, null, href);
         }
-    } else {
-        // We are on a sub-page, navigate back home with the target hash
-        // The hashchange will trigger render(), which handles the scroll.
     }
 });
 
-// Scroll Reveal
-function handleReveal() {
-    const elements = document.querySelectorAll('[data-reveal]');
-    for (let i = 0; i < elements.length; i++) {
-        const el = elements[i];
-        const rect = el.getBoundingClientRect();
-        if (rect.top < window.innerHeight - 100) {
-            el.classList.add('revealed');
-        }
-    }
+// Scroll Reveal using Intersection Observer (Prevents Forced Reflow)
+function initScrollReveal() {
+    const revealCallback = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('revealed');
+                observer.unobserve(entry.target); // Reveal once
+            }
+        });
+    };
+
+    const observer = new IntersectionObserver(revealCallback, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    });
+
+    document.querySelectorAll('[data-reveal]').forEach(el => {
+        observer.observe(el);
+    });
 }
 
 // Header scroll effect
 function handleNavbarScroll() {
     const header = document.getElementById('main-header');
     if (!header) return;
-    if (window.scrollY > 50) {
-        header.classList.add('sticky');
-    } else {
-        header.classList.remove('sticky');
-    }
+    
+    // Use requestAnimationFrame to ensure style updates don't block the UI
+    requestAnimationFrame(() => {
+        if (window.scrollY > 50) {
+            header.classList.add('sticky');
+        } else {
+            header.classList.remove('sticky');
+        }
+    });
 }
 
-// Scroll listeners
-window.addEventListener('scroll', function() {
-    handleReveal();
+// Initial behaviors
+function init() {
+    initScrollReveal();
     handleNavbarScroll();
-});
+}
 
-// Initial triggers
-handleReveal();
-handleNavbarScroll();
+// Scroll listeners (Passive for performance)
+window.addEventListener('scroll', handleNavbarScroll, { passive: true });
+
+// Initial execute
+render();
+
+// Routing
+window.addEventListener('hashchange', render);
