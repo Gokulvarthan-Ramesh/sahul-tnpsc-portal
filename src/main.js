@@ -95,20 +95,18 @@ function render() {
 
         // Handle scroll to section if hash exists
         if (hash && hash !== '#') {
-            setTimeout(() => {
+            requestAnimationFrame(() => {
                 const target = document.querySelector(hash);
                 if (target) {
-                    const offset = window.innerWidth <= 991 ? 70 : 90;
-                    const bodyRect = document.body.getBoundingClientRect().top;
-                    const elementRect = target.getBoundingClientRect().top;
-                    const targetPosition = elementRect - bodyRect - offset - 20;
+                    const offset = window.innerWidth <= 991 ? 70 : 100;
+                    const targetPosition = target.offsetTop - offset;
                     
                     window.scrollTo({
                         top: targetPosition,
                         behavior: 'smooth'
                     });
                 }
-            }, 100);
+            });
         } else {
             window.scrollTo(0, 0);
         }
@@ -177,8 +175,8 @@ document.addEventListener('click', function(e) {
             e.preventDefault();
             
             // Header height + padding offset
-            const offset = window.innerWidth <= 991 ? 70 : 90;
-            const targetPos = target.getBoundingClientRect().top + window.scrollY - offset - 20;
+            const offset = window.innerWidth <= 991 ? 70 : 100;
+            const targetPos = target.offsetTop - offset;
 
             window.scrollTo({
                 top: targetPos,
