@@ -105,7 +105,7 @@ export const Faculty = () => {
                 <div class="col-lg-3 col-sm-6 mb-30" data-reveal>
                     <div class="faculty-card-premium">
                         <div class="fac-image">
-                            <img src="./src/assets/user/Sahul.jpeg" alt="Sahul Hameed">
+                            <img src="/assets/user/Sahul.jpeg" alt="Sahul Hameed">
                             <div class="fac-overlay">
                                 <div class="fac-social">
                                     <a href="https://wa.me/917598242374"><i class="fab fa-whatsapp"></i></a>
@@ -125,7 +125,7 @@ export const Faculty = () => {
                 <div class="col-lg-3 col-sm-6 mb-30" data-reveal>
                     <div class="faculty-card-premium">
                         <div class="fac-image">
-                            <img src="./src/assets/user/Boopathi.jpeg" alt="Boopathi Raja">
+                            <img src="/assets/user/Boopathi.jpeg" alt="Boopathi Raja">
                             <div class="fac-overlay">
                                 <div class="fac-social">
                                     <a href="https://wa.me/917598242374"><i class="fab fa-whatsapp"></i></a>
@@ -145,7 +145,7 @@ export const Faculty = () => {
                 <div class="col-lg-3 col-sm-6 mb-30" data-reveal>
                     <div class="faculty-card-premium">
                         <div class="fac-image">
-                            <img src="./src/assets/user/Divya.jpeg" alt="Divya Mam">
+                            <img src="/assets/user/Divya.jpeg" alt="Divya Mam">
                             <div class="fac-overlay">
                                 <div class="fac-social">
                                     <a href="https://wa.me/917598242374"><i class="fab fa-whatsapp"></i></a>
@@ -165,7 +165,7 @@ export const Faculty = () => {
                 <div class="col-lg-3 col-sm-6 mb-30" data-reveal>
                     <div class="faculty-card-premium">
                         <div class="fac-image">
-                            <img src="./src/assets/user/Sheikh.jpeg" alt="Sheikh Sir">
+                            <img src="/assets/user/Sheikh.jpeg" alt="Sheikh Sir">
                             <div class="fac-overlay">
                                 <div class="fac-social">
                                     <a href="https://wa.me/917598242374"><i class="fab fa-whatsapp"></i></a>

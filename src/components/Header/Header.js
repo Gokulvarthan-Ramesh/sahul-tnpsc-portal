@@ -4,7 +4,7 @@ export const Header = () => {
         <div class="container container-header h-cb">
             <div class="dsk-logo">
                 <a class="nav-brand" href="#">
-                    <img src="./src/assets/logo.png" alt="Sahul TNPSC Logo" class="main-logo" />
+                    <img src="/assets/logo.png" alt="Sahul TNPSC Logo" class="main-logo" />
                     <span class="brand-name">Sahul TNPSC Circle</span>
                 </a>
             </div>
