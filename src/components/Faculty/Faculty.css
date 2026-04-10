@@ -387,3 +387,38 @@
     height: 280px;
   }
 }
+
+@media (max-width: 768px) {
+  .funfct .card-content span {
+    font-size: 32px;
+  }
+  .funfct .card-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  .funfct {
+    padding: 30px 20px;
+    margin-bottom: 25px;
+  }
+  .success-badge .num {
+    font-size: 24px;
+  }
+  .success-badge .txt {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 576px) {
+  .faculty-card-premium {
+    margin: 0 auto 30px;
+    max-width: 320px;
+  }
+  .faculty-card-premium .fac-image {
+    height: 300px;
+  }
+  .funfct .card-content span {
+    font-size: 28px;
+  }
+}

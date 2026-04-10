@@ -13,7 +13,7 @@
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  overflow: hidden; /* Avoid any internal overflows affecting layout */
+  overflow: visible; /* Must remain visible so dropdown handles can extend beyond container */
 }
 
 .main-header.sticky {
@@ -194,20 +194,109 @@
   background: var(--primary-alt);
 }
 
+/* Mobile Toggle styling */
+.mobile-menu-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px;
+  margin-left: 15px;
+  transition: all 0.3s ease;
+  line-height: 1;
+}
+
+.main-header.sticky .mobile-menu-toggle {
+  color: var(--text-dark);
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 1100px) {
   .container-header {
     padding: 0 25px;
   }
-  .brand-name {
-    display: none; /* Hide text logo on medium screens if needed */
-  }
 }
 
 @media (max-width: 991px) {
+  .brand-name {
+    font-size: 16px;
+    letter-spacing: 0px;
+  }
+  
+  .main-header.sticky .brand-name {
+    font-size: 15px;
+  }
+
+  .main-logo {
+    max-height: 38px;
+  }
+
+  .main-header.sticky .main-logo {
+    max-height: 35px;
+  }
+
+  .mobile-menu-toggle {
+    display: block;
+    margin-left: auto; /* Push to right */
+  }
+  
+  .header-actions {
+    display: none; /* Hide phone icon and CTA on mobile header */
+  }
+
   .custom-nav {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    transform: translateY(-150%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+    padding: 10px 0;
+    height: auto;
+    border-top: 1px solid #eee;
+  }
+
+  .main-header.sticky .custom-nav {
+    top: 65px;
+  }
+
+  .custom-nav.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .custom-nav .nav-list {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .menu-links {
+    height: auto;
+    padding: 15px 30px;
+    color: var(--text-dark);
+    display: block;
+    border-bottom: 1px solid #f9f9f9;
+  }
+  
+  .menu-links:last-child {
+    border-bottom: none;
+  }
+
+  .menu-links::after {
     display: none;
   }
+
+  .main-header.sticky .menu-links:hover {
+    color: var(--primary);
+  }
+
   .main-header {
     height: 70px;
   }

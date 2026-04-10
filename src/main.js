@@ -42,9 +42,39 @@ function getPage() {
     return 'home';
 }
 
+function updateMetadata(page) {
+    const titles = {
+        'home': 'Sahul TNPSC | Top TNPSC Coaching in Tamil Nadu (Group 1, 2, 4 & VAO)',
+        'daily-ca': 'Daily Current Affairs | Sahul TNPSC Circle',
+        'exam-notifications': 'TNPSC Exam Notifications & Results 2025 | Sahul TNPSC',
+        'important-pdfs': 'Free TNPSC Study Materials & PDF Notes | Sahul TNPSC',
+        'practice-questions': 'TNPSC Practice Questions & Mock Tests | Sahul TNPSC',
+        'free-pdfs': 'Free TNPSC PDFs & Resources | Sahul TNPSC',
+        'free-notes': 'Subject-wise TNPSC Notes | Sahul TNPSC',
+        'free-pyq': 'TNPSC Previous Year Question Papers | Sahul TNPSC',
+        'free-tests': 'Free Online TNPSC Mock Tests | Sahul TNPSC'
+    };
+
+    const descriptions = {
+        'home': 'Expert TNPSC coaching for Group 1, 2, 4 and VAO across Tamil Nadu. Online and Offline classes with expert mentorship.',
+        'daily-ca': 'Stay updated with TNPSC-focused current affairs curated daily by our expert mentors.',
+        'exam-notifications': 'Stay informed with the latest TNPSC exam notifications, results, and hall ticket updates.',
+        'important-pdfs': 'Download essential TNPSC study materials and PDF notes for all competitive exams.',
+        'practice-questions': 'Improve your score with topic-wise TNPSC practice questions and detailed explanations.'
+    };
+
+    document.title = titles[page] || titles['home'];
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+        metaDesc.setAttribute('content', descriptions[page] || descriptions['home']);
+    }
+}
+
 function render() {
     const page = getPage();
     const hash = window.location.hash;
+
+    updateMetadata(page);
 
     if (page === 'home') {
         app.innerHTML =
@@ -68,7 +98,15 @@ function render() {
             setTimeout(() => {
                 const target = document.querySelector(hash);
                 if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
+                    const offset = window.innerWidth <= 991 ? 70 : 90;
+                    const bodyRect = document.body.getBoundingClientRect().top;
+                    const elementRect = target.getBoundingClientRect().top;
+                    const targetPosition = elementRect - bodyRect - offset - 20;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
                 }
             }, 100);
         } else {
@@ -135,11 +173,19 @@ document.addEventListener('click', function(e) {
 
     // Section scroll logic
     if (getPage() === 'home') {
-        // We are on home page, scroll smoothly
         const target = document.querySelector(href);
         if (target) {
             e.preventDefault();
-            target.scrollIntoView({ behavior: 'smooth' });
+            
+            // Header height + padding offset
+            const offset = window.innerWidth <= 991 ? 70 : 90;
+            const targetPos = target.getBoundingClientRect().top + window.pageYOffset - offset - 20;
+
+            window.scrollTo({
+                top: targetPos,
+                behavior: 'smooth'
+            });
+
             // Update hash without jumping
             history.pushState(null, null, href);
         }

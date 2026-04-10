@@ -46,7 +46,7 @@ export const Results = () => {
                     <div class="success-card">
                         <div class="sc-header">
                             <div class="sc-avatar">
-                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Karthikeyan R">
+                                <img src="/assets/user/karthikeyan.png" alt="Karthikeyan R - Successful TNPSC Group 1 Deputy Collector" loading="lazy" decoding="async">
                                 <div class="sc-verified"><i class="fas fa-check"></i></div>
                             </div>
                             <div class="sc-info">
@@ -72,7 +72,7 @@ export const Results = () => {
                     <div class="success-card">
                         <div class="sc-header">
                             <div class="sc-avatar">
-                                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Priya Dharshini">
+                                <img src="/assets/user/priya.png" alt="Priya Dharshini - TNPSC Group 2 BDO Officer Success Story" loading="lazy" decoding="async">
                                 <div class="sc-verified"><i class="fas fa-check"></i></div>
                             </div>
                             <div class="sc-info">
@@ -98,7 +98,7 @@ export const Results = () => {
                     <div class="success-card">
                         <div class="sc-header">
                             <div class="sc-avatar">
-                                <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Murugan S">
+                                <img src="/assets/user/murugan.png" alt="Murugan S - From Rural Background to TNPSC VAO Officer" loading="lazy" decoding="async">
                                 <div class="sc-verified"><i class="fas fa-check"></i></div>
                             </div>
                             <div class="sc-info">

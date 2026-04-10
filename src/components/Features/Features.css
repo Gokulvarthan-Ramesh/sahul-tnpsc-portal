@@ -122,7 +122,23 @@
 }
 
 @media (max-width: 991px) {
-  .grid-services .col-lg-4 {
+  .grid-services .col-lg-4, .grid-services .col-sm-6 {
     margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .service-card-app .card-image {
+    height: 180px;
+  }
+  .service-card-app {
+    margin: 0 auto;
+    max-width: 380px;
+  }
+  .service-card-app .card-content {
+    padding: 20px;
+  }
+  .service-card-app h3 {
+    font-size: 20px;
   }
 }

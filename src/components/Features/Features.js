@@ -11,7 +11,7 @@ export const Features = () => {
                 <div class="col-lg-4 col-sm-6 mb-30" data-reveal>
                     <div class="service-card-app s-card-1">
                         <div class="card-image">
-                            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop" alt="TNPSC Group 1">
+                            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop" alt="TNPSC Group 1 Coaching Tamil Nadu - Sahul TNPSC Circle" loading="lazy" decoding="async">
                             <div class="course-badge">Vidhai Batch</div>
                         </div>
                         <div class="card-content">
@@ -26,7 +26,7 @@ export const Features = () => {
                                     <li><i class="fas fa-calendar-alt"></i> <strong>Start Date:</strong> April 14, 2024</li>
                                 </ul>
                             </div>
-                            <a href="https://wa.me/917598242374" class="btn-main mt-3 w-100 text-center">Enroll Now</a>
+                            <a href="https://wa.me/917598242374" class="btn-main mt-3 w-100 text-center" aria-label="Enroll in TNPSC Group 1 Coaching">Enroll Now</a>
                         </div>
                     </div>
                 </div>
@@ -34,7 +34,7 @@ export const Features = () => {
                 <div class="col-lg-4 col-sm-6 mb-30" data-reveal>
                     <div class="service-card-app s-card-2">
                         <div class="card-image">
-                            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2070&auto=format&fit=crop" alt="TNPSC Group 2 / 2A">
+                            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2070&auto=format&fit=crop" alt="TNPSC Group 2 and 2A Coaching - Best Center in Tamil Nadu" loading="lazy" decoding="async">
                             <div class="course-badge">Special Batch</div>
                         </div>
                         <div class="card-content">
@@ -49,7 +49,7 @@ export const Features = () => {
                                     <li><i class="fas fa-calendar-alt"></i> <strong>Start Date:</strong> April 14, 2024</li>
                                 </ul>
                             </div>
-                            <a href="https://wa.me/917598242374" class="btn-main mt-3 w-100 text-center">Enroll Now</a>
+                            <a href="https://wa.me/917598242374" class="btn-main mt-3 w-100 text-center" aria-label="Enroll in TNPSC Group 2 Coaching">Enroll Now</a>
                         </div>
                     </div>
                 </div>
@@ -57,7 +57,7 @@ export const Features = () => {
                 <div class="col-lg-4 col-sm-6 mb-30" data-reveal>
                     <div class="service-card-app s-card-3">
                         <div class="card-image">
-                            <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=2070&auto=format&fit=crop" alt="TNPSC Group 4 & VAO">
+                            <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=2070&auto=format&fit=crop" alt="TNPSC Group 4 and VAO Coaching - Village Administrative Officer Exam" loading="lazy" decoding="async">
                             <div class="course-badge">Foundation</div>
                         </div>
                         <div class="card-content">
@@ -72,7 +72,7 @@ export const Features = () => {
                                     <li><i class="fas fa-calendar-alt"></i> <strong>Start Date:</strong> April 14, 2024</li>
                                 </ul>
                             </div>
-                            <a href="https://wa.me/917598242374" class="btn-main mt-3 w-100 text-center">Enroll Now</a>
+                            <a href="https://wa.me/917598242374" class="btn-main mt-3 w-100 text-center" aria-label="Enroll in TNPSC Group 4 and VAO Coaching">Enroll Now</a>
                         </div>
                     </div>
                 </div>

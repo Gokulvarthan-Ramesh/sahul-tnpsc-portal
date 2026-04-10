@@ -37,7 +37,7 @@ export const Faculty = () => {
                 </div>
                 <div class="col-lg-6" data-reveal>
                     <div class="about-image-premium">
-                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop" alt="Premium Government Coaching Gateway" class="img-fluid rounded-lg shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop" alt="Premium Government Coaching Gateway - Sahul TNPSC Circle Excellence" class="img-fluid rounded-lg shadow-2xl" loading="lazy" decoding="async">
                         <div class="success-badge">
                             <span class="num">450+</span>
                             <span class="txt">Officers Produced</span>
@@ -105,7 +105,7 @@ export const Faculty = () => {
                 <div class="col-lg-3 col-sm-6 mb-30" data-reveal>
                     <div class="faculty-card-premium">
                         <div class="fac-image">
-                            <img src="/assets/user/Sahul.jpeg" alt="Sahul Hameed">
+                            <img src="/assets/user/Sahul.jpeg" alt="Sahul Hameed - Founder of Sahul TNPSC Circle & Current Affairs Expert" loading="lazy" decoding="async">
                             <div class="fac-overlay">
                                 <div class="fac-social">
                                     <a href="https://wa.me/917598242374"><i class="fab fa-whatsapp"></i></a>
@@ -125,7 +125,7 @@ export const Faculty = () => {
                 <div class="col-lg-3 col-sm-6 mb-30" data-reveal>
                     <div class="faculty-card-premium">
                         <div class="fac-image">
-                            <img src="/assets/user/Boopathi.jpeg" alt="Boopathi Raja">
+                            <img src="/assets/user/Boopathi.jpeg" alt="Boopathi Raja - Expert Tamil Language Faculty for TNPSC" loading="lazy" decoding="async">
                             <div class="fac-overlay">
                                 <div class="fac-social">
                                     <a href="https://wa.me/917598242374"><i class="fab fa-whatsapp"></i></a>
@@ -145,7 +145,7 @@ export const Faculty = () => {
                 <div class="col-lg-3 col-sm-6 mb-30" data-reveal>
                     <div class="faculty-card-premium">
                         <div class="fac-image">
-                            <img src="/assets/user/Divya.jpeg" alt="Divya Mam">
+                            <img src="/assets/user/Divya.jpeg" alt="Divya Mam - TNPSC Maths and Aptitude Specialist" loading="lazy" decoding="async">
                             <div class="fac-overlay">
                                 <div class="fac-social">
                                     <a href="https://wa.me/917598242374"><i class="fab fa-whatsapp"></i></a>
@@ -165,7 +165,7 @@ export const Faculty = () => {
                 <div class="col-lg-3 col-sm-6 mb-30" data-reveal>
                     <div class="faculty-card-premium">
                         <div class="fac-image">
-                            <img src="/assets/user/Sheikh.jpeg" alt="Sheikh Sir">
+                            <img src="/assets/user/Sheikh.jpeg" alt="Sheikh Sir - Current Affairs Mentor for Govt Exams" loading="lazy" decoding="async">
                             <div class="fac-overlay">
                                 <div class="fac-social">
                                     <a href="https://wa.me/917598242374"><i class="fab fa-whatsapp"></i></a>

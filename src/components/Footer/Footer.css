@@ -123,3 +123,40 @@
     margin-bottom: 20px;
   }
 }
+
+@media (max-width: 768px) {
+  .footer-style-three {
+    padding-top: 50px;
+  }
+  .footer-middle {
+    padding-top: 40px;
+    text-align: center;
+  }
+  .footer-bottom {
+    padding: 20px 0;
+  }
+  .mt-50 {
+    margin-top: 30px;
+  }
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-social {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .footer-links-list li, 
+  .footer-contact-list li {
+    justify-content: center;
+    text-align: center;
+  }
+  .floating-box {
+    bottom: 10px;
+    right: 10px;
+  }
+  .fab-btn {
+    width: 40px;
+    height: 40px;
+  }
+}

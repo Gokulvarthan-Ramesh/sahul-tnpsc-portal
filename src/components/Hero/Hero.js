@@ -11,7 +11,7 @@ export const Hero = () => {
                             <div class="row">
                                 <div class="col-md-8">
                                     <div data-swiper-parallax="300" class="slide-title">
-                                        <h2 class="text-white">TNPSC Group 1, 2, 2A, 4 <br>Complete Coaching Circle</h2>
+                                        <h1 class="text-white">TNPSC Group 1, 2, 2A, 4 <br>Complete Coaching Circle</h1>
                                     </div>
                                     <div data-swiper-parallax="400" class="slide-text">
                                         <p>Selection Focused Preparation. உங்கள் அரசுப்பணியே எங்களது லட்சியம்.</p>
@@ -32,7 +32,7 @@ export const Hero = () => {
                             <div class="row">
                                 <div class="col-md-8">
                                     <div data-swiper-parallax="300" class="slide-title">
-                                        <h2 class="text-white">New Batch: VIDHAI <br>Starting April 14</h2>
+                                        <h1 class="text-white">New Batch: VIDHAI <br>Starting April 14</h1>
                                     </div>
                                     <div data-swiper-parallax="400" class="slide-text">
                                         <p>Your Gateway to Tamil Nadu Government Service. Comprehensive Study Plan.</p>
@@ -53,7 +53,7 @@ export const Hero = () => {
                             <div class="row">
                                 <div class="col-md-8">
                                     <div data-swiper-parallax="300" class="slide-title">
-                                        <h2 class="text-white">Learn from Expert <br>Sahul Hameed & Team</h2>
+                                        <h1 class="text-white">Learn from Expert <br>Sahul Hameed & Team</h1>
                                     </div>
                                     <div data-swiper-parallax="400" class="slide-text">
                                         <p>Ex-Unacademy Educator with 8+ Years of Experience. Expert in Current Affairs & Mentorship.</p>
