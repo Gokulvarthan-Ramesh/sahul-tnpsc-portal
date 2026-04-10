@@ -37,7 +37,7 @@ export const Faculty = () => {
                 </div>
                 <div class="col-lg-6" data-reveal>
                     <div class="about-image-premium">
-                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop" alt="Premium Government Coaching Gateway - Sahul TNPSC Circle Excellence" class="img-fluid rounded-lg shadow-2xl" loading="lazy" decoding="async">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1000&auto=format&fm=webp" alt="Premium Government Coaching Gateway - Sahul TNPSC Circle Excellence" class="img-fluid rounded-lg shadow-2xl" loading="lazy" decoding="async">
                         <div class="success-badge">
                             <span class="num">450+</span>
                             <span class="txt">Officers Produced</span>

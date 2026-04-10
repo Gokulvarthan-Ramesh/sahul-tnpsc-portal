@@ -5,7 +5,7 @@ export const Hero = () => {
             <div class="swiper-wrapper">
                 <!-- Slide 1 -->
                 <div class="swiper-slide">
-                    <div class="slide-inner background-img" style="background-image: url('https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=2070&auto=format&fit=crop');">
+                    <div class="slide-inner background-img" style="background-image: url('https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=1920&auto=format&fm=webp');">
                         <div class="gradient-overlay"></div>
                         <div class="container">
                             <div class="row">
@@ -26,7 +26,7 @@ export const Hero = () => {
                 </div>
                 <!-- Slide 2 -->
                 <div class="swiper-slide">
-                    <div class="slide-inner background-img" style="background-image: url('https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=2066&auto=format&fit=crop');">
+                    <div class="slide-inner background-img" style="background-image: url('https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=1920&auto=format&fm=webp');">
                         <div class="gradient-overlay"></div>
                         <div class="container">
                             <div class="row">
@@ -47,7 +47,7 @@ export const Hero = () => {
                 </div>
                 <!-- Slide 3 -->
                 <div class="swiper-slide">
-                    <div class="slide-inner background-img" style="background-image: url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2070&auto=format&fit=crop');">
+                    <div class="slide-inner background-img" style="background-image: url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1920&auto=format&fm=webp');">
                         <div class="gradient-overlay"></div>
                         <div class="container">
                             <div class="row">
