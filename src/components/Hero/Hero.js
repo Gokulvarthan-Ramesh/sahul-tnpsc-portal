@@ -78,12 +78,17 @@ export const Hero = () => {
 };
 
 // Initialize Swiper after the component is rendered
+// Initialize Swiper after the DOM has settled to prevent forced reflows
 export const initHeroSlider = () => {
-    requestAnimationFrame(() => {
+    // Delaying by 150ms ensures the browser has completed the heavy initial layout pass
+    // for all sections before Swiper attempts to measure its container.
+    setTimeout(() => {
         new Swiper(".mySwiper", {
             loop: true,
             parallax: true,
             speed: 1000,
+            observer: true, 
+            observeParents: true,
             autoplay: {
                 delay: 5000,
                 disableOnInteraction: false,
@@ -97,5 +102,5 @@ export const initHeroSlider = () => {
                 prevEl: ".swiper-button-prev",
             },
         });
-    });
+    }, 150);
 };
