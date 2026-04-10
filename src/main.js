@@ -126,8 +126,8 @@ function render() {
         window.scrollTo(0, 0);
     }
 
-    // Re-initialize dynamic behaviors
-    init();
+    // Re-initialize dynamic behaviors after the current paint cycle
+    requestAnimationFrame(init);
 }
 
 // Initial render
