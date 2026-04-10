@@ -12,13 +12,9 @@ export const Hero = () => {
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-8">
-                                    <div data-swiper-parallax="300" class="slide-title">
-                                        <h1 class="text-white">TNPSC Group 1, 2, 2A, 4 <br>Complete Coaching Circle</h1>
-                                    </div>
-                                    <div data-swiper-parallax="400" class="slide-text">
-                                        <p>Selection Focused Preparation. உங்கள் அரசுப்பணியே எங்களது லட்சியம்.</p>
-                                    </div>
-                                    <div data-swiper-parallax="500" class="slide-btns">
+                                    <h1 data-swiper-parallax="300" class="text-white">TNPSC Group 1, 2, 2A, 4 <br>Complete Coaching Circle</h1>
+                                    <p data-swiper-parallax="400" class="text-white mt-3">Selection Focused Preparation. உங்கள் அரசுப்பணியே எங்களது லட்சியம்.</p>
+                                    <div data-swiper-parallax="500" class="mt-4">
                                         <a href="https://wa.me/917598242374" class="btn-main">Join Selection Batch <i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
                                     </div>
                                 </div>
@@ -35,13 +31,9 @@ export const Hero = () => {
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-8">
-                                    <div data-swiper-parallax="300" class="slide-title">
-                                        <h1 class="text-white">New Batch: VIDHAI <br>Starting April 14</h1>
-                                    </div>
-                                    <div data-swiper-parallax="400" class="slide-text">
-                                        <p>Your Gateway to Tamil Nadu Government Service. Comprehensive Study Plan.</p>
-                                    </div>
-                                    <div data-swiper-parallax="500" class="slide-btns">
+                                    <h1 data-swiper-parallax="300" class="text-white">New Batch: VIDHAI <br>Starting April 14</h1>
+                                    <p data-swiper-parallax="400" class="text-white mt-3">Your Gateway to Tamil Nadu Government Service. Comprehensive Study Plan.</p>
+                                    <div data-swiper-parallax="500" class="mt-4">
                                         <a href="https://wa.me/917598242374" class="btn-main">Enroll Today <i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
                                     </div>
                                 </div>
@@ -58,13 +50,9 @@ export const Hero = () => {
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-8">
-                                    <div data-swiper-parallax="300" class="slide-title">
-                                        <h1 class="text-white">Learn from Expert <br>Sahul Hameed & Team</h1>
-                                    </div>
-                                    <div data-swiper-parallax="400" class="slide-text">
-                                        <p>Ex-Unacademy Educator with 8+ Years of Experience. Expert in Current Affairs & Mentorship.</p>
-                                    </div>
-                                    <div data-swiper-parallax="500" class="slide-btns">
+                                    <h1 data-swiper-parallax="300" class="text-white">Learn from Expert <br>Sahul Hameed & Team</h1>
+                                    <p data-swiper-parallax="400" class="text-white mt-3">Ex-Unacademy Educator with 8+ Years of Experience. Expert in Current Affairs & Mentorship.</p>
+                                    <div data-swiper-parallax="500" class="mt-4">
                                         <a href="https://wa.me/917598242374" class="btn-main">Meet Our Faculty <i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
                                     </div>
                                 </div>
