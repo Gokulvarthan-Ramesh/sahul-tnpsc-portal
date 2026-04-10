@@ -1,0 +1,217 @@
+/* Modern & Premium Header Styling */
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 2000;
+  background: rgba(15, 2, 37, 0.15); /* Transparent initial state */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden; /* Avoid any internal overflows affecting layout */
+}
+
+.main-header.sticky {
+  background: rgba(255, 255, 255, 0.95);
+  height: 75px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(20px);
+}
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%; /* Ensure container fills the header height */
+}
+
+.dsk-logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none !important;
+  line-height: 1; /* Reset line-height to prevent vertical shifting */
+  height: 100%;
+}
+
+.main-logo {
+  max-height: 44px; /* Optimized height for better vertical centering */
+  width: auto;
+  transition: all 0.4s ease;
+  filter: brightness(0) invert(1);
+  display: block;
+}
+
+.main-header.sticky .main-logo {
+  max-height: 42px;
+  filter: none; /* Show original colors when sticky */
+}
+
+.brand-name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.5px;
+  transition: all 0.4s ease;
+}
+
+.main-header.sticky .brand-name {
+  color: var(--text-dark);
+  font-size: 19px;
+}
+
+/* Navigation Links */
+.custom-nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.custom-nav .nav-list {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin: 0; /* Clear any default margins */
+}
+
+.menu-links {
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 0 16px;
+  height: 100%; /* Fill container height */
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  line-height: 1;
+}
+
+.main-header.sticky .menu-links {
+  color: var(--text-dark);
+}
+
+/* Underline Animation */
+.menu-links::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--primary);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.menu-links:hover::after {
+  width: 20px;
+}
+
+.menu-links:hover {
+  color: #fff;
+}
+
+.main-header.sticky .menu-links:hover {
+  color: var(--primary);
+}
+
+/* Action Buttons */
+.header-actions {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.header-actions .nav-list-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 0;
+}
+
+.btn-round-call {
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  line-height: 1;
+}
+
+.main-header.sticky .btn-round-call {
+  background: var(--primary);
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 8px 15px rgba(67, 2, 174, 0.2);
+}
+
+.btn-round-call:hover {
+  transform: translateY(-3px);
+  background: var(--primary);
+  border-color: transparent;
+}
+
+.quote-btn {
+  line-height: 44px;
+  padding: 0 24px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 50px;
+  background: var(--primary);
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(67, 2, 174, 0.2);
+  transition: all 0.3s ease;
+}
+
+.quote-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(67, 2, 174, 0.3);
+  background: var(--primary-alt);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1100px) {
+  .container-header {
+    padding: 0 25px;
+  }
+  .brand-name {
+    display: none; /* Hide text logo on medium screens if needed */
+  }
+}
+
+@media (max-width: 991px) {
+  .custom-nav {
+    display: none;
+  }
+  .main-header {
+    height: 70px;
+  }
+  .main-header.sticky {
+    height: 65px;
+  }
+}
