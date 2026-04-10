@@ -83,30 +83,67 @@ export const Hero = () => {
   `;
 };
 
-// Initialize Swiper after the component is rendered
-// Initialize Swiper after the DOM has settled to prevent forced reflows
-export const initHeroSlider = () => {
-    // Delaying by 150ms ensures the browser has completed the heavy initial layout pass
-    // for all sections before Swiper attempts to measure its container.
-    setTimeout(() => {
-        new Swiper(".mySwiper", {
-            loop: true,
-            parallax: true,
-            speed: 1000,
-            observer: true, 
-            observeParents: true,
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-    }, 150);
+// Helper to load external assets dynamically
+const loadAsset = (url, type) => {
+    return new Promise((resolve) => {
+        if (type === 'script') {
+            if (document.querySelector(`script[src="${url}"]`)) return resolve();
+            const script = document.createElement('script');
+            script.src = url;
+            script.onload = resolve;
+            document.head.appendChild(script);
+        } else {
+            if (document.querySelector(`link[href="${url}"]`)) return resolve();
+            const link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = url;
+            link.onload = resolve;
+            document.head.appendChild(link);
+        }
+    });
+};
+
+// Initialize Swiper using Modular ESM to minimize unused JS (Tree-shaking via CDN)
+export const initHeroSlider = async () => {
+    try {
+        // 1. Preload Styles (Small footprint, contains all module layouts)
+        await loadAsset('https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css', 'style');
+
+        // 2. Dynamic Import only the required modules (Avoids loading 25KB+ of unused features)
+        const [SwiperModule, Nav, Pag, Auto, Para] = await Promise.all([
+            import('https://cdn.jsdelivr.net/npm/swiper@11/swiper.min.mjs'),
+            import('https://cdn.jsdelivr.net/npm/swiper@11/modules/navigation.min.mjs'),
+            import('https://cdn.jsdelivr.net/npm/swiper@11/modules/pagination.min.mjs'),
+            import('https://cdn.jsdelivr.net/npm/swiper@11/modules/autoplay.min.mjs'),
+            import('https://cdn.jsdelivr.net/npm/swiper@11/modules/parallax.min.mjs')
+        ]);
+
+        const Swiper = SwiperModule.default;
+
+        // 3. Initialize Swiper with specific modules only
+        setTimeout(() => {
+            new Swiper(".mySwiper", {
+                modules: [Nav.default, Pag.default, Auto.default, Para.default],
+                loop: true,
+                parallax: true,
+                speed: 1000,
+                observer: true, 
+                observeParents: true,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        }, 150);
+    } catch (err) {
+        console.error("Swiper failed to load modularly:", err);
+    }
 };

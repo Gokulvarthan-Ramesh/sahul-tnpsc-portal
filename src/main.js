@@ -77,20 +77,24 @@ function render() {
     updateMetadata(page);
 
     if (page === 'home') {
-        app.innerHTML =
-            Header() +
-            '<main>' +
-            Hero() +
-            Features() +
-            Exams() +
-            DailyUpdates() +
-            FreeResources() +
-            Results() +
-            Faculty() +
-            Contact() +
-            '</main>' +
-            Footer();
-
+        // Optimized Progressive Rendering: Paint Above-the-Fold content first
+        const aboveFold = Header() + '<main>' + Hero() + '</main>' + Footer();
+        const everything = Header() + '<main>' + Hero() + Features() + Exams() + DailyUpdates() + FreeResources() + Results() + Faculty() + Contact() + '</main>' + Footer();
+        
+        if (hash && hash !== '#') {
+            // If user is jumping to a section, render all at once
+            app.innerHTML = everything;
+        } else {
+            // Default: Progressive render to avoid long-task blocking (>50ms)
+            app.innerHTML = aboveFold;
+            requestAnimationFrame(() => {
+                const main = app.querySelector('main');
+                if (main) {
+                    main.innerHTML = Hero() + Features() + Exams() + DailyUpdates() + FreeResources() + Results() + Faculty() + Contact();
+                }
+            });
+        }
+        
         initHeroSlider();
 
         // Handle scroll to section if hash exists

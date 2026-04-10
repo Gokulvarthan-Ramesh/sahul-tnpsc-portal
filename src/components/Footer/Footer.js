@@ -40,7 +40,7 @@ export const Footer = () => {
             <div class="row">
                 <div class="col-lg-4 col-sm-6 mb-30" data-reveal>
                     <div class="footer-logo mb-20">
-                        <img src="/assets/logo.svg" alt="Sahul TNPSC Logo" class="main-logo" style="max-height: 70px;">
+                        <img src="/assets/logo.svg" alt="Sahul TNPSC Logo" class="main-logo" width="70" height="70" style="max-height: 70px;">
                     </div>
                     <p class="text-white-50">Sahul TNPSC Circle is a premier coaching destination in Trichy, dedicated to empowering TNPSC aspirants with selection-focused mentorship and high-quality coaching.</p>
                     <div class="footer-social mt-20">
