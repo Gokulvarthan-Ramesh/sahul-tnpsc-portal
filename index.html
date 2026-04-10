@@ -48,7 +48,7 @@
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <link rel="canonical" href="https://sahultnpsc.com/">
     
-    <!-- Performance & Preconnects (Core Web Vitals) -->
+    <!-- Performance & Preconnects (Optimized to exactly 4 critical origins) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
@@ -241,11 +241,11 @@
     <!-- Google Fonts (Zero-Latency Strategy) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     
     <!-- Critical CSS Inlined (Zero Network Requests) -->
     <style id="critical-path-css">
-      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
       :root {
         --primary: #8e2de2; --primary-alt: #4a00e0; --secondary: #fe4c1c; --accent: #c471ed;
         --text-dark: #050748; --text-muted: #6a6a8e; --bg-dark: #101010; --bg-light: #f8fdff;
@@ -266,6 +266,10 @@
       .common-heading h2 { font-size: 36px; margin-bottom: 15px; }
       .common-heading span { color: var(--primary-alt); font-size: 16px; font-weight: 600; text-transform: uppercase; display: block; margin-bottom: 15px; }
       .btn-main { font-size: 16px; font-weight: 500; padding: 0 35px; line-height: 56px; background: var(--gradient-primary); color: #fff; border-radius: 100px; display: inline-block; box-shadow: var(--shadow-main); transition: all 0.5s ease; }
+      
+      /* Font Display Swap for Iconography */
+      @font-face { font-family: 'Font Awesome 6 Free'; font-display: swap; }
+      @font-face { font-family: 'bootstrap-icons'; font-display: swap; }
     </style>
     
     <!-- Deferred Third Party Assets -->
