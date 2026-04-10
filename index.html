@@ -238,10 +238,11 @@
     <!-- PWA Web Manifest -->
     <!-- <link rel="manifest" href="/site.webmanifest"> -->
 
-    <!-- Google Fonts with display=swap -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Google Fonts (Non-critical - Deferred) -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     
-    <!-- Local Styles (Critical - Render Blocking on purpose) -->
+    <!-- Local Styles (Preloaded for faster LCP) -->
+    <link rel="preload" href="./src/style.css" as="style">
     <link rel="stylesheet" href="./src/style.css">
 
     <!-- Third Party CSS (Non-critical - Deferred to prevent render blocking) -->
