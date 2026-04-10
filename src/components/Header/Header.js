@@ -63,12 +63,4 @@ document.addEventListener('click', (e) => {
   }
 });
 
-// Add sticky effect on scroll
-window.addEventListener('scroll', () => {
-  const header = document.querySelector('.main-header');
-  if (window.scrollY > 50) {
-    header.classList.add('sticky');
-  } else {
-    header.classList.remove('sticky');
-  }
-});
+// Scroll logic consolidated in main.js for optimized performance

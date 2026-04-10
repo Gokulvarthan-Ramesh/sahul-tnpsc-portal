@@ -98,13 +98,7 @@ function render() {
             requestAnimationFrame(() => {
                 const target = document.querySelector(hash);
                 if (target) {
-                    const offset = window.innerWidth <= 991 ? 70 : 100;
-                    const targetPosition = target.offsetTop - offset;
-                    
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth'
-                    });
+                    target.scrollIntoView({ behavior: 'smooth' });
                 }
             });
         } else {
@@ -173,16 +167,7 @@ document.addEventListener('click', function(e) {
         const target = document.querySelector(href);
         if (target) {
             e.preventDefault();
-            
-            // Header height + padding offset
-            const offset = window.innerWidth <= 991 ? 70 : 100;
-            const targetPos = target.offsetTop - offset;
-
-            window.scrollTo({
-                top: targetPos,
-                behavior: 'smooth'
-            });
-
+            target.scrollIntoView({ behavior: 'smooth' });
             // Update hash without jumping
             history.pushState(null, null, href);
         }
