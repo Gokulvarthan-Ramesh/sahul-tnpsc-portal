@@ -47,7 +47,7 @@ export const Footer = () => {
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="https://youtube.com/@sahultnpsc" target="_blank"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-2 col-sm-6 mb-30" data-reveal>

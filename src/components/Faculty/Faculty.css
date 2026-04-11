@@ -1,104 +1,217 @@
-.about-image-premium {
+/* Modernized About Section Styles */
+.about-section {
   position: relative;
+  background-color: #ffffff;
+  overflow: hidden;
   z-index: 1;
-  transition: all 0.5s ease;
 }
 
-.about-image-premium img {
-  border-radius: var(--radius-lg);
-  box-shadow: 0 25px 60px rgba(12, 0, 46, 0.15);
-  transition: all 0.5s ease;
+.mesh-bg-about {
+  position: absolute;
+  top: -10%;
+  left: -5%;
+  width: 40%;
+  height: 50%;
+  background: radial-gradient(circle, rgba(142, 45, 226, 0.04) 0%, transparent 70%);
+  filter: blur(60px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.sub-title {
+  color: var(--primary-alt);
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.inspiring-title {
+  font-size: 44px;
+  line-height: 1.2;
+  color: var(--text-dark);
+  font-weight: 800;
+  margin-bottom: 25px;
+  letter-spacing: -1px;
+}
+
+.highlight-text {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.premium-p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: var(--text-muted);
+  max-width: 90%;
+}
+
+/* Glassmorphism Feature Cards */
+.about-glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(142, 45, 226, 0.1);
+  padding: 30px;
+  border-radius: 24px;
+  margin-top: 30px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 10px 30px rgba(12, 0, 46, 0.03);
+}
+
+.about-glass-card:hover {
+  transform: translateY(-8px);
+  background: #ffffff;
+  box-shadow: 0 20px 45px rgba(67, 2, 174, 0.08);
+  border-color: rgba(142, 45, 226, 0.2);
+}
+
+.card-icon-blob {
+  width: 54px;
+  height: 54px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.icon-1 { background: rgba(254, 76, 28, 0.1); color: #fe4c1c; }
+.icon-2 { background: rgba(0, 190, 250, 0.1); color: #00befa; }
+
+.about-glass-card h4 {
+  font-size: 19px;
+  margin-bottom: 10px;
+  color: var(--text-dark);
+  font-weight: 700;
+}
+
+.about-glass-card p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text-muted);
+  margin-bottom: 0;
+}
+
+/* Premium Image Treatment */
+.about-image-wrapper {
+  position: relative;
+  padding: 20px;
+  z-index: 1;
+}
+
+.image-inner {
+  position: relative;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0 30px 70px rgba(12, 0, 46, 0.15);
+  transition: transform 0.6s ease;
+}
+
+.about-image-wrapper:hover .image-inner {
+  transform: perspective(1000px) rotateY(-3deg) rotateX(1deg);
+}
+
+.image-inner img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
 
-.about-image-premium:hover img {
-  transform: perspective(1000px) rotateY(-5deg) rotateX(2deg);
-}
-
-.success-badge {
+.image-overlay-decoration {
   position: absolute;
-  bottom: -15px;
-  left: -15px;
-  background: linear-gradient(135deg, var(--primary), var(--primary-alt));
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent 60%, rgba(15, 2, 37, 0.2));
+  pointer-events: none;
+}
+
+/* Modern Floating Badges */
+.experience-floating-badge, .success-floating-badge {
+  position: absolute;
+  background: #ffffff;
+  padding: 15px 25px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  z-index: 5;
+  animation: badgeFloat 4s ease-in-out infinite;
+  border: 1px solid rgba(0,0,0,0.03);
+}
+
+.experience-floating-badge {
+  top: 20%;
+  left: -20px;
+  animation-delay: 0s;
+}
+
+.success-floating-badge {
+  bottom: 10%;
+  right: -10px;
+  background: var(--gradient-primary);
   color: #fff;
-  padding: 25px;
-  border-radius: var(--radius-md);
-  box-shadow: 0 15px 35px rgba(67, 2, 174, 0.3);
-  text-align: center;
-  animation: badgePulse 3s infinite;
-  z-index: 2;
+  animation-delay: 1.5s;
 }
 
-@keyframes badgePulse {
-  0% { transform: translateY(0) scale(1); }
-  50% { transform: translateY(-5px) scale(1.02); }
-  100% { transform: translateY(0) scale(1); }
+@keyframes badgeFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
 }
 
-.success-badge .num {
-  display: block;
-  font-size: 32px;
+.badge-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.badge-content .years, .badge-content .num {
+  font-size: 26px;
   font-weight: 800;
-  line-height: 1;
+  line-height: 1.1;
 }
 
-.success-badge .txt {
-  font-size: 13px;
+.badge-content .text {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  opacity: 0.9;
+}
+
+/* Premium Button */
+.btn-main-premium {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--gradient-primary);
+  color: #fff;
+  padding: 18px 35px;
+  border-radius: 100px;
   font-weight: 600;
+  font-size: 16px;
+  box-shadow: var(--shadow-main);
+  transition: all 0.4s ease;
+  border: none;
+}
+
+.btn-main-premium:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(142, 45, 226, 0.3);
+  color: #fff;
+}
+
+.btn-main-premium span {
   text-transform: uppercase;
   letter-spacing: 1px;
-}
-
-.inspiring-title {
-  font-size: 38px;
-  line-height: 1.3;
-  color: var(--text-dark);
-  font-weight: 800;
-  margin-bottom: 25px;
-}
-
-.premium-p {
-  font-size: 17px;
-  line-height: 1.7;
-  color: var(--text-muted);
-}
-
-.about-content-block {
-  padding-right: 40px;
-}
-
-.about-features .about-f-card {
-  background: #f8f9ff;
-  padding: 25px;
-  border-radius: var(--radius-md);
-  margin-top: 25px;
-  transition: all 0.4s ease;
-  border: 1px solid rgba(67, 2, 174, 0.05);
-}
-
-.about-features .about-f-card:hover {
-  background: #ffffff;
-  transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(12, 0, 46, 0.08);
-}
-
-.about-features .about-f-card i {
-  font-size: 32px;
-  margin-bottom: 15px;
-  display: block;
-}
-
-.a-icon-1 { color: #fe4c1c !important; }
-.a-icon-2 { color: #00befa !important; }
-
-.about-features .about-f-card h4 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  color: var(--text-dark);
-  font-weight: 700;
 }
 
 /* Funfct (Counter) Styles */
@@ -210,7 +323,28 @@
   color: rgba(255, 255, 255, 0.85);
 }
 
-/* Faculty Premium Card Styles */
+/* Faculty Premium Section & Mesh Background */
+.faculty-section-premium {
+  position: relative;
+  background-color: #f8faff;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.mesh-bg-decoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(142, 45, 226, 0.05) 0, transparent 50%), 
+    radial-gradient(at 100% 0%, rgba(196, 113, 237, 0.05) 0, transparent 50%),
+    radial-gradient(at 50% 100%, rgba(74, 0, 224, 0.05) 0, transparent 50%);
+  z-index: -1;
+  pointer-events: none;
+}
+
 .heading-subtitle {
   font-size: 16px;
   color: var(--text-muted);
@@ -226,31 +360,32 @@
   margin-left: -15px;
 }
 
+/* Updated Premium Card */
 .faculty-card-premium {
   background: #ffffff;
-  border-radius: var(--radius-lg);
+  border-radius: 24px;
   overflow: hidden;
-  box-shadow: 0 10px 30px 0 rgba(12, 0, 46, 0.06);
-  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  box-shadow: 0 10px 40px rgba(12, 0, 46, 0.06);
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   height: 100%;
   display: flex;
   flex-direction: column;
   position: relative;
-  border-bottom: 4px solid transparent;
+  border: 1px solid rgba(0, 0, 0, 0.03);
 }
 
 .faculty-card-premium:hover {
-  transform: translateY(-12px);
-  box-shadow: 0 30px 60px 0 rgba(12, 0, 46, 0.14);
-  border-bottom-color: var(--primary);
+  transform: translateY(-15px) scale(1.02);
+  box-shadow: 0 40px 80px rgba(12, 0, 46, 0.15);
+  border-color: rgba(142, 45, 226, 0.1);
 }
 
 .faculty-card-premium .fac-image {
   width: 100%;
-  height: 320px;
+  height: 340px;
   overflow: hidden;
-  background-color: #f0f2f5;
   position: relative;
+  background-color: #f0f2f5;
 }
 
 .faculty-card-premium .fac-image img {
@@ -258,29 +393,127 @@
   height: 100%;
   object-fit: cover;
   object-position: top center;
-  transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  display: block;
+  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .faculty-card-premium:hover .fac-image img {
-  transform: scale(1.08);
-  filter: brightness(0.85);
+  filter: grayscale(0.2) brightness(0.9);
 }
 
-/* Gradient overlay on hover */
+/* Mentor Floating Badge */
+.mentor-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(8px);
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  z-index: 3;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.mentor-badge i {
+  color: #22c55e;
+  font-size: 13px;
+}
+
+.mentor-badge.active {
+  background: rgba(142, 45, 226, 0.85);
+}
+
+/* Glassmorphism Info Panel */
+.fac-info-glass {
+  padding: 24px;
+  text-align: left;
+  position: relative;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.8));
+  backdrop-filter: blur(10px);
+  margin: -60px 20px 20px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 15px 35px rgba(12, 0, 46, 0.08);
+  z-index: 5;
+  transition: all 0.4s ease;
+}
+
+.faculty-card-premium:hover .fac-info-glass {
+  background: #ffffff;
+  transform: translateY(-5px);
+  box-shadow: 0 20px 45px rgba(67, 2, 174, 0.1);
+}
+
+.fac-info-glass h3 {
+  font-size: 20px;
+  margin-bottom: 4px;
+  color: var(--text-dark);
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.fac-role {
+  font-size: 14px;
+  color: var(--primary-alt);
+  font-weight: 600;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.fac-bio {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  display: block;
+}
+
+.fac-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  padding-top: 15px;
+}
+
+.badge-exp-premium {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.fac-rating {
+  font-size: 13px;
+  font-weight: 800;
+  color: #f59e0b;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Hover-Only Social Overlays */
 .fac-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, transparent 30%, rgba(67, 2, 174, 0.8) 100%);
+  background: rgba(15, 23, 42, 0.4);
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
-  padding-bottom: 30px;
   opacity: 0;
-  transition: opacity 0.4s ease;
+  transition: all 0.4s ease;
   z-index: 2;
 }
 
@@ -288,137 +521,83 @@
   opacity: 1;
 }
 
-/* Social icons */
 .fac-social {
   display: flex;
-  gap: 12px;
+  gap: 15px;
 }
 
 .fac-social a {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(8px);
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  background: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
-  font-size: 18px;
-  transition: all 0.3s ease;
-  transform: translateY(20px);
-  opacity: 0;
+  color: var(--text-dark);
+  font-size: 20px;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform: scale(0.5);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
 .faculty-card-premium:hover .fac-social a {
-  transform: translateY(0);
-  opacity: 1;
+  transform: scale(1);
 }
-
-.faculty-card-premium:hover .fac-social a:nth-child(1) { transition-delay: 0.1s; }
-.faculty-card-premium:hover .fac-social a:nth-child(2) { transition-delay: 0.2s; }
-.faculty-card-premium:hover .fac-social a:nth-child(3) { transition-delay: 0.3s; }
 
 .fac-social a:hover {
-  background: #fff;
-  color: var(--primary);
-  transform: translateY(-3px) !important;
-}
-
-/* Faculty info section */
-.faculty-card-premium .fac-info {
-  padding: 25px 20px;
-  text-align: center;
-  flex-grow: 1;
-  position: relative;
-}
-
-.faculty-card-premium .fac-info h3 {
-  font-size: 20px;
-  margin-bottom: 6px;
-  color: var(--text-dark);
-  font-weight: 700;
-  transition: color 0.3s ease;
-}
-
-.faculty-card-premium:hover .fac-info h3 {
-  color: var(--primary);
-}
-
-.faculty-card-premium .fac-info p {
-  font-size: 14px;
-  color: var(--primary-alt);
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
-.faculty-card-premium .badge-exp {
-  display: inline-block;
-  padding: 6px 18px;
-  background: linear-gradient(135deg, #f3f5ff, #ede9fe);
-  color: var(--primary-alt);
-  border-radius: 50px;
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  transition: all 0.3s ease;
-}
-
-.faculty-card-premium:hover .badge-exp {
-  background: linear-gradient(135deg, var(--primary), var(--primary-alt));
+  background: var(--primary);
   color: #fff;
+  transform: translateY(-8px) scale(1.1);
 }
 
 @media (max-width: 991px) {
-  .about-content-block {
-    padding-right: 0;
-    margin-bottom: 50px;
-  }
-  .success-badge {
-    left: 20px;
-    bottom: -10px;
-    padding: 15px;
-  }
-  .inspiring-title {
-    font-size: 30px;
-  }
-  .faculty-card-premium .fac-image {
-    height: 280px;
-  }
-}
-
-@media (max-width: 768px) {
-  .funfct .card-content span {
-    font-size: 32px;
-  }
-  .funfct .card-icon {
-    width: 60px;
-    height: 60px;
-    font-size: 24px;
-    margin-bottom: 15px;
-  }
-  .funfct {
-    padding: 30px 20px;
-    margin-bottom: 25px;
-  }
-  .success-badge .num {
-    font-size: 24px;
-  }
-  .success-badge .txt {
-    font-size: 11px;
+  .fac-info-glass {
+    margin: -40px 15px 15px;
   }
 }
 
 @media (max-width: 576px) {
   .faculty-card-premium {
-    margin: 0 auto 30px;
     max-width: 320px;
-  }
-  .faculty-card-premium .fac-image {
-    height: 300px;
-  }
-  .funfct .card-content span {
-    font-size: 28px;
+    margin: 0 auto 40px;
   }
 }
+
+/* Preserve existing about section styles */
+.about-image-premium img {
+  border-radius: var(--radius-lg);
+  box-shadow: 0 25px 60px rgba(12, 0, 46, 0.15);
+  transition: all 0.5s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.about-image-premium:hover img { transform: perspective(1000px) rotateY(-5deg) rotateX(2deg); }
+.success-badge {
+    position: absolute;
+    bottom: -15px;
+    left: -15px;
+    background: linear-gradient(135deg, var(--primary), var(--primary-alt));
+    color: #fff;
+    padding: 25px;
+    border-radius: var(--radius-md);
+    box-shadow: 0 15px 35px rgba(67, 2, 174, 0.3);
+    text-align: center;
+    z-index: 2;
+}
+.inspiring-title { font-size: 38px; line-height: 1.3; color: var(--text-dark); font-weight: 800; margin-bottom: 25px; }
+.premium-p { font-size: 17px; line-height: 1.7; color: var(--text-muted); }
+.about-f-card { background: #f8f9ff; padding: 25px; border-radius: var(--radius-md); margin-top: 25px; transition: all 0.4s ease; border: 1px solid rgba(67, 2, 174, 0.05); }
+.funfct { padding: 40px 24px; border-radius: var(--radius-lg); text-align: center; transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); height: 100%; border: 1px solid rgba(0,0,0,0.04); position: relative; overflow: hidden; cursor: pointer; }
+.fun1 { background: #f3f5ff; }
+.fun2 { background: #fff3e6; }
+.fun3 { background: #fcf2f6; }
+.fun4 { background: #f3faff; }
+.funfct .card-icon { width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 28px; transition: all 0.5s ease; }
+.fun1 .card-icon { background: rgba(67, 2, 174, 0.12); color: #4302ae; }
+.fun2 .card-icon { background: rgba(254, 76, 28, 0.12); color: #fe4c1c; }
+.fun3 .card-icon { background: rgba(255, 0, 122, 0.12); color: #ff007a; }
+.fun4 .card-icon { background: rgba(0, 190, 250, 0.12); color: #00befa; }
+

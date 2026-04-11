@@ -23,7 +23,8 @@
   display: flex;
   align-items: center;
   position: relative;
-  padding-top: 100px; /* Offset for fixed header */
+  padding-top: 100px;
+  /* Offset for fixed header */
 }
 
 .hero-bg-img {
@@ -119,6 +120,7 @@
   .hero-slider {
     height: 75vh;
   }
+
   .slide-title h2 {
     font-size: 38px;
   }
@@ -129,17 +131,20 @@
     height: 70vh;
     min-height: 500px;
   }
+
   .slide-title h2 {
     font-size: 32px;
   }
+
   .slide-text p {
     font-size: 16px;
     margin-bottom: 25px;
   }
+
   .slide-inner {
     padding-top: 50px;
   }
-  
+
   /* Move Nav Arrows to Bottom on Mobile */
   .mySwiper .swiper-button-next,
   .mySwiper .swiper-button-prev {
@@ -147,15 +152,15 @@
     bottom: 25px;
     transform: none;
   }
-  
+
   .mySwiper .swiper-button-prev {
     left: 20px;
   }
-  
+
   .mySwiper .swiper-button-next {
     right: 20px;
   }
-  
+
   .mySwiper .swiper-pagination {
     bottom: 35px !important;
   }
@@ -166,23 +171,28 @@
     height: 60vh;
     min-height: 450px;
   }
+
   .slide-title h2 {
     font-size: 26px;
   }
+
   .slide-text p {
     font-size: 15px;
     margin-bottom: 20px;
   }
+
   .mySwiper .swiper-button-next,
   .mySwiper .swiper-button-prev {
     width: 35px;
     height: 35px;
     bottom: 20px;
   }
+
   .mySwiper .swiper-button-next::after,
   .mySwiper .swiper-button-prev::after {
     font-size: 14px;
   }
+
   .mySwiper .swiper-pagination {
     bottom: 27px !important;
   }

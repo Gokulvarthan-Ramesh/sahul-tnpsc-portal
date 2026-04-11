@@ -9,6 +9,7 @@ import './components/DailyUpdates/DailyUpdatesPage.css';
 import './components/FreeResources/FreeResources.css';
 import './components/Results/Results.css';
 import './components/Faculty/Faculty.css';
+import './components/YouTubeFeed/YouTubeFeed.css';
 import './components/Contact/Contact.css';
 import './components/Footer/Footer.css';
 
@@ -23,6 +24,7 @@ import { FreeResources } from './components/FreeResources/FreeResources.js';
 import { FreeResourcesPage } from './components/FreeResources/FreeResourcesPage.js';
 import { Results } from './components/Results/Results.js';
 import { Faculty } from './components/Faculty/Faculty.js';
+import { YouTubeFeed, initYouTubeFeed } from './components/YouTubeFeed/YouTubeFeed.js';
 import { Contact } from './components/Contact/Contact.js';
 import { Footer } from './components/Footer/Footer.js';
 
@@ -79,7 +81,7 @@ function render() {
     if (page === 'home') {
         // Optimized Progressive Rendering: Paint Above-the-Fold content first
         const aboveFold = Header() + '<main>' + Hero() + '</main>' + Footer();
-        const everything = Header() + '<main>' + Hero() + Features() + Exams() + DailyUpdates() + FreeResources() + Results() + Faculty() + Contact() + '</main>' + Footer();
+        const everything = Header() + '<main>' + Hero() + Features() + Exams() + DailyUpdates() + FreeResources() + Results() + Faculty() + YouTubeFeed() + Contact() + '</main>' + Footer();
         
         if (hash && hash !== '#') {
             // If user is jumping to a section, render all at once
@@ -90,7 +92,7 @@ function render() {
             requestAnimationFrame(() => {
                 const main = app.querySelector('main');
                 if (main) {
-                    main.innerHTML = Hero() + Features() + Exams() + DailyUpdates() + FreeResources() + Results() + Faculty() + Contact();
+                    main.innerHTML = Hero() + Features() + Exams() + DailyUpdates() + FreeResources() + Results() + Faculty() + YouTubeFeed() + Contact();
                 }
             });
         }
@@ -218,6 +220,7 @@ function handleNavbarScroll() {
 function init() {
     initScrollReveal();
     handleNavbarScroll();
+    initYouTubeFeed();
 }
 
 // Scroll listeners (Passive for performance)

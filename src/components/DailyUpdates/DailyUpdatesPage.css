@@ -243,8 +243,10 @@
 .sidebar-card .btn-main {
   font-size: 14px;
   padding: 0 28px;
-  line-height: 48px;
-  display: block;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sidebar-card .btn-outline {

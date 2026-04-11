@@ -1,5 +1,5 @@
 export const Hero = () => {
-  return `
+    return `
     <section class="hero-slider hero-style" id="home">
         <div class="swiper-container mySwiper">
             <div class="swiper-wrapper">
@@ -115,7 +115,7 @@ export const initHeroSlider = async () => {
                 loop: true,
                 parallax: true,
                 speed: 1000,
-                observer: true, 
+                observer: true,
                 observeParents: true,
                 autoplay: {
                     delay: 5000,
