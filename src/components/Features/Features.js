@@ -27,7 +27,7 @@ export const Features = () => {
                                     <li><i class="fas fa-user-tie"></i> <strong>Faculty:</strong> Sahul, Boopathi, Divya & Sheikh</li>
                                 </ul>
                             </div>
-                            <a href="https://wa.me/917598242374" class="btn-main mt-3 w-100 text-center" aria-label="Enroll in TNPSC Group 1 Coaching">Enroll Now</a>
+                            <a href="https://wa.me/917598242374?text=Hi, I want to enroll in the TNPSC Group 1 Comprehensive Selection Batch 2026." class="btn-main mt-3 w-100 text-center" aria-label="Enroll in TNPSC Group 1 Coaching">Enroll Now</a>
                         </div>
                     </div>
                 </div>
@@ -51,7 +51,7 @@ export const Features = () => {
                                     <li><i class="fas fa-user-tie"></i> <strong>Faculty:</strong> Boopathi, Sahul, Divya & Sheikh</li>
                                 </ul>
                             </div>
-                            <a href="https://wa.me/917598242374" class="btn-main mt-3 w-100 text-center" aria-label="Enroll in TNPSC Group 2 Coaching">Enroll Now</a>
+                            <a href="https://wa.me/917598242374?text=Hi, I want to enroll in the TNPSC Group 2 & 2A Master Program 2026." class="btn-main mt-3 w-100 text-center" aria-label="Enroll in TNPSC Group 2 Coaching">Enroll Now</a>
                         </div>
                     </div>
                 </div>
@@ -75,7 +75,7 @@ export const Features = () => {
                                     <li><i class="fas fa-user-tie"></i> <strong>Faculty:</strong> Sheikh, Sahul, Boopathi & Divya</li>
                                 </ul>
                             </div>
-                            <a href="https://wa.me/917598242374" class="btn-main mt-3 w-100 text-center" aria-label="Enroll in TNPSC Group 4 and VAO Coaching">Enroll Now</a>
+                            <a href="https://wa.me/917598242374?text=Hi, I want to enroll in the TNPSC Group 4 & VAO Goal Program 2026." class="btn-main mt-3 w-100 text-center" aria-label="Enroll in TNPSC Group 4 and VAO Coaching">Enroll Now</a>
                         </div>
                     </div>
                 </div>

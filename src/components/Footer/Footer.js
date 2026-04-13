@@ -112,7 +112,7 @@ export const Footer = () => {
             <div class="container container-sticky">
                 <p>Ready to join the <strong>next Selection Batch</strong> in Tamil Nadu?</p>
                 <div class="sticky-btns">
-                    <a href="https://wa.me/917598242374" class="btn-sticky-whatsapp"><i class="fab fa-whatsapp"></i> Chat Now</a>
+                    <a href="https://wa.me/917598242374?text=Hi, I'm on the Sahul TNPSC website and need some quick help. Can you assist me?" class="btn-sticky-whatsapp"><i class="fab fa-whatsapp"></i> Chat Now</a>
                     <a href="#contact-section" class="btn-sticky-enquiry">Quick Enquiry</a>
                 </div>
             </div>

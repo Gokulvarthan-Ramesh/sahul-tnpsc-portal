@@ -23,7 +23,7 @@ export const Hero = () => {
                                     <h1 data-swiper-parallax="300" class="text-white">TNPSC Group 1, 2, 2A, 4 <br>Sahul TNPSC Circle</h1>
                                     <p data-swiper-parallax="400" class="text-white mt-3">Selection Focused Preparation. உங்கள் அரசுப்பணியே எங்களது லட்சியம்.</p>
                                     <div data-swiper-parallax="500" class="mt-4">
-                                        <a href="https://wa.me/917598242374" class="btn-main">Join Selection Batch <i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
+                                        <a href="https://wa.me/917598242374?text=Hi, I want to join the 2026 Selection Batch. Please share the details." class="btn-main">Join Selection Batch <i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
                                     </div>
                                 </div>
                             </div>
@@ -42,7 +42,7 @@ export const Hero = () => {
                                     <h2 data-swiper-parallax="300" class="text-white">New Batches: Arambam & Vithai <br>Admission Open</h2>
                                     <p data-swiper-parallax="400" class="text-white mt-3">Comprehensive 6-Month Selection Batch. Tamil Nadu's Premier TNPSC Coaching @ ₹5555.</p>
                                     <div data-swiper-parallax="500" class="mt-4">
-                                        <a href="https://wa.me/917598242374" class="btn-main">Enroll Today <i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
+                                        <a href="https://wa.me/917598242374?text=Hi, I want to enroll for the TNPSC Group exams. Please guide me on the process." class="btn-main">Enroll Today <i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
                                     </div>
                                 </div>
                             </div>
@@ -61,7 +61,7 @@ export const Hero = () => {
                                     <h2 data-swiper-parallax="300" class="text-white">Learn from Experts <br>Sahul, Boopathi Raja, Divya & Sheikh</h2>
                                     <p data-swiper-parallax="400" class="text-white mt-3">Ex-Unacademy Educators and Subject Specialists. Dedicated mentorship for your TNPSC success.</p>
                                     <div data-swiper-parallax="500" class="mt-4">
-                                        <a href="https://wa.me/917598242374" class="btn-main">Meet Our Faculty <i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
+                                        <a href="https://wa.me/917598242374?text=Hi, I'd like to talk to a mentor about my TNPSC 2026 preparation strategy." class="btn-main">Meet Our Faculty <i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
                                     </div>
                                 </div>
                             </div>

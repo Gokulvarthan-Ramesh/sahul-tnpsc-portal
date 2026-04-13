@@ -129,7 +129,7 @@ export const Faculty = () => {
                             <div class="mentor-badge"><i class="fas fa-check-circle"></i> Founder Mentor</div>
                             <div class="fac-overlay">
                                 <div class="fac-social">
-                                    <a href="https://wa.me/917598242374" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                    <a href="https://wa.me/917598242374?text=Hi Sahul Sir, I'm interested in your 2026 Current Affairs mentorship batch." title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                                     <a href="https://youtube.com/@sahultnpsc" title="YouTube"><i class="fab fa-youtube"></i></a>
                                     <a href="https://www.instagram.com/sahultnpsc?igsh=MWIwbzh1MTk5enByaA%3D%3D" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
                                 </div>
@@ -154,7 +154,7 @@ export const Faculty = () => {
                             <div class="mentor-badge active">Grammar Expert</div>
                             <div class="fac-overlay">
                                 <div class="fac-social">
-                                    <a href="https://wa.me/917598242374" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                    <a href="https://wa.me/917598242374?text=Hi Boopathi Sir, I want to join your Tamil Language Specialization classes for TNPSC 2026." title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                                     <a href="https://youtube.com/@sahultnpsc" title="YouTube"><i class="fab fa-youtube"></i></a>
                                     <a href="https://www.instagram.com/sahultnpsc?igsh=MWIwbzh1MTk5enByaA%3D%3D" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
                                 </div>
@@ -179,7 +179,7 @@ export const Faculty = () => {
                             <div class="mentor-badge">Maths Expert</div>
                             <div class="fac-overlay">
                                 <div class="fac-social">
-                                    <a href="https://wa.me/917598242374" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                    <a href="https://wa.me/917598242374?text=Hi Divya Mam, I need help with TNPSC Maths & Aptitude shortcuts for the 2026 exams." title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                                     <a href="https://youtube.com/@sahultnpsc" title="YouTube"><i class="fab fa-youtube"></i></a>
                                     <a href="https://www.instagram.com/sahultnpsc?igsh=MWIwbzh1MTk5enByaA%3D%3D" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
                                 </div>
@@ -204,7 +204,7 @@ export const Faculty = () => {
                             <div class="mentor-badge active">GS Specialist</div>
                             <div class="fac-overlay">
                                 <div class="fac-social">
-                                    <a href="https://wa.me/917598242374" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                    <a href="https://wa.me/917598242374?text=Hi Sheikh Sir, I'm interested in your General Science & Current Affairs guidance." title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                                     <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
                                     <a href="https://www.instagram.com/sahultnpsc?igsh=MWIwbzh1MTk5enByaA%3D%3D" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
                                 </div>

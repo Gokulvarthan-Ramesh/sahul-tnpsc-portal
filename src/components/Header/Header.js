@@ -25,7 +25,7 @@ export const Header = () => {
                         </a>
                     </li>
                     <li class="desktop-only-btn">
-                        <a href="https://wa.me/917598242374" class="btn-main quote-btn">
+                        <a href="https://wa.me/917598242374?text=Hi, I'd like to get more information about Sahul TNPSC Circle and the 2026 batches." class="btn-main quote-btn">
                             Join Now <span class="circle"></span>
                         </a>
                     </li>
