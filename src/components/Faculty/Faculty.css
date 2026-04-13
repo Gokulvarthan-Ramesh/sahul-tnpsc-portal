@@ -375,9 +375,15 @@
 }
 
 .faculty-card-premium:hover {
-  transform: translateY(-15px) scale(1.02);
-  box-shadow: 0 40px 80px rgba(12, 0, 46, 0.15);
-  border-color: rgba(142, 45, 226, 0.1);
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 30px 60px rgba(12, 0, 46, 0.12);
+  border-color: rgba(142, 45, 226, 0.15);
+}
+
+@media (max-width: 768px) {
+  .faculty-card-premium:hover {
+    transform: translateY(-5px) scale(1.01);
+  }
 }
 
 .faculty-card-premium .fac-image {
@@ -446,6 +452,13 @@
   transition: all 0.4s ease;
 }
 
+@media (max-width: 576px) {
+  .fac-info-glass {
+    margin: -40px 12px 12px;
+    padding: 20px;
+  }
+}
+
 .faculty-card-premium:hover .fac-info-glass {
   background: #ffffff;
   transform: translateY(-5px);
@@ -499,6 +512,13 @@
   display: flex;
   align-items: center;
   gap: 4px;
+}
+
+@media (max-width: 576px) {
+  .fac-info-glass h3 { font-size: 18px; }
+  .fac-role { font-size: 13px; margin-bottom: 8px; }
+  .fac-bio { font-size: 12px; line-height: 1.5; margin-bottom: 15px; }
+  .badge-exp-premium { font-size: 10px; }
 }
 
 /* Hover-Only Social Overlays */
@@ -559,8 +579,12 @@
 
 @media (max-width: 576px) {
   .faculty-card-premium {
-    max-width: 320px;
-    margin: 0 auto 40px;
+    width: 100%;
+    max-width: 350px; /* Increased slightly for better fit */
+    margin: 0 auto 30px;
+  }
+  .faculty-card-premium .fac-image {
+    height: 300px; /* Slightly shorter on mobile */
   }
 }
 

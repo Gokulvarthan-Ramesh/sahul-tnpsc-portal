@@ -6,13 +6,13 @@ export const Hero = () => {
                 <!-- Slide 1 (LCP - Eager Loading) -->
                 <div class="swiper-slide">
                     <div class="slide-inner">
-                        <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=1440&auto=format&fm=webp" 
+                        <img src="/assets/tnpsc_hero.png" 
                              alt="Sahul TNPSC Circle Training" class="hero-bg-img" fetchpriority="high" decoding="sync">
                         <div class="gradient-overlay"></div>
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-8">
-                                    <h1 data-swiper-parallax="300" class="text-white">TNPSC Group 1, 2, 2A, 4 <br>Complete Coaching Circle</h1>
+                                    <h1 data-swiper-parallax="300" class="text-white">TNPSC Group 1, 2, 2A, 4 <br>Sahul TNPSC Circle</h1>
                                     <p data-swiper-parallax="400" class="text-white mt-3">Selection Focused Preparation. உங்கள் அரசுப்பணியே எங்களது லட்சியம்.</p>
                                     <div data-swiper-parallax="500" class="mt-4">
                                         <a href="https://wa.me/917598242374" class="btn-main">Join Selection Batch <i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
@@ -25,14 +25,14 @@ export const Hero = () => {
                 <!-- Slide 2 (Lazy Loading) -->
                 <div class="swiper-slide">
                     <div class="slide-inner">
-                        <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=1440&auto=format&fm=webp" 
-                             alt="Library Study Sessions" class="hero-bg-img" loading="lazy" decoding="async">
+                        <img src="/assets/tnpsc_batch.png" 
+                             alt="Library Study Sessions - New Batch VIDHAI" class="hero-bg-img" loading="lazy" decoding="async">
                         <div class="gradient-overlay"></div>
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-8">
-                                    <h1 data-swiper-parallax="300" class="text-white">New Batch: VIDHAI <br>Starting April 14</h1>
-                                    <p data-swiper-parallax="400" class="text-white mt-3">Your Gateway to Tamil Nadu Government Service. Comprehensive Study Plan.</p>
+                                    <h1 data-swiper-parallax="300" class="text-white">New Batches: Arambam & Vithai <br>Admission Open</h1>
+                                    <p data-swiper-parallax="400" class="text-white mt-3">Comprehensive 6-Month Selection Batch. Tamil Nadu's Premier TNPSC Coaching @ ₹5555.</p>
                                     <div data-swiper-parallax="500" class="mt-4">
                                         <a href="https://wa.me/917598242374" class="btn-main">Enroll Today <i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
                                     </div>
@@ -44,14 +44,14 @@ export const Hero = () => {
                 <!-- Slide 3 (Lazy Loading) -->
                 <div class="swiper-slide">
                     <div class="slide-inner">
-                        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1440&auto=format&fm=webp" 
-                             alt="Expert Faculty Mentorship" class="hero-bg-img" loading="lazy" decoding="async">
+                        <img src="/assets/tnpsc_experts.png" 
+                             alt="Expert Faculty Mentorship - Sahul TNPSC Circle" class="hero-bg-img" loading="lazy" decoding="async">
                         <div class="gradient-overlay"></div>
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-8">
-                                    <h1 data-swiper-parallax="300" class="text-white">Learn from Expert <br>Sahul Hameed & Team</h1>
-                                    <p data-swiper-parallax="400" class="text-white mt-3">Ex-Unacademy Educator with 8+ Years of Experience. Expert in Current Affairs & Mentorship.</p>
+                                    <h1 data-swiper-parallax="300" class="text-white">Learn from Experts <br>Sahul, Boopathi Raja, Divya & Sheikh</h1>
+                                    <p data-swiper-parallax="400" class="text-white mt-3">Ex-Unacademy Educators and Subject Specialists. Dedicated mentorship for your TNPSC success.</p>
                                     <div data-swiper-parallax="500" class="mt-4">
                                         <a href="https://wa.me/917598242374" class="btn-main">Meet Our Faculty <i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
                                     </div>

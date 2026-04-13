@@ -8,6 +8,7 @@ import './components/DailyUpdates/DailyUpdates.css';
 import './components/DailyUpdates/DailyUpdatesPage.css';
 import './components/FreeResources/FreeResources.css';
 import './components/Results/Results.css';
+import './components/Results/OfficerChats.css';
 import './components/Faculty/Faculty.css';
 import './components/YouTubeFeed/YouTubeFeed.css';
 import './components/Contact/Contact.css';
@@ -23,6 +24,8 @@ import { DailyUpdatesPage } from './components/DailyUpdates/DailyUpdatesPage.js'
 import { FreeResources } from './components/FreeResources/FreeResources.js';
 import { FreeResourcesPage } from './components/FreeResources/FreeResourcesPage.js';
 import { Results } from './components/Results/Results.js';
+import { OfficerChats, initOfficerMosaic } from './components/Results/OfficerChats.js';
+import { SuccessWallPage } from './components/Results/SuccessWallPage.js';
 import { Faculty } from './components/Faculty/Faculty.js';
 import { YouTubeFeed, initYouTubeFeed } from './components/YouTubeFeed/YouTubeFeed.js';
 import { Contact } from './components/Contact/Contact.js';
@@ -34,7 +37,8 @@ const app = document.getElementById('app');
 // Sub-page routes
 const dailySubPages = ['daily-ca', 'exam-notifications', 'important-pdfs', 'practice-questions'];
 const freeSubPages = ['free-pdfs', 'free-notes', 'free-pyq', 'free-tests'];
-const subPages = dailySubPages.concat(freeSubPages);
+const resultSubPages = ['success-wall'];
+const subPages = dailySubPages.concat(freeSubPages).concat(resultSubPages);
 
 function getPage() {
     const hash = window.location.hash.slice(1);
@@ -81,7 +85,7 @@ function render() {
     if (page === 'home') {
         // Optimized Progressive Rendering: Paint Above-the-Fold content first
         const aboveFold = Header() + '<main>' + Hero() + '</main>' + Footer();
-        const everything = Header() + '<main>' + Hero() + Features() + Exams() + DailyUpdates() + FreeResources() + Results() + Faculty() + YouTubeFeed() + Contact() + '</main>' + Footer();
+        const everything = Header() + '<main>' + Hero() + Features() + Exams() + DailyUpdates() + FreeResources() + OfficerChats() + Results() + Faculty() + YouTubeFeed() + Contact() + '</main>' + Footer();
         
         if (hash && hash !== '#') {
             // If user is jumping to a section, render all at once
@@ -92,7 +96,7 @@ function render() {
             requestAnimationFrame(() => {
                 const main = app.querySelector('main');
                 if (main) {
-                    main.innerHTML = Hero() + Features() + Exams() + DailyUpdates() + FreeResources() + Results() + Faculty() + YouTubeFeed() + Contact();
+                    main.innerHTML = Hero() + Features() + Exams() + DailyUpdates() + FreeResources() + OfficerChats() + Results() + Faculty() + YouTubeFeed() + Contact();
                 }
             });
         }
@@ -120,6 +124,9 @@ function render() {
             for (var j = 0; j < freeSubPages.length; j++) {
                 if (freeSubPages[j] === page) { subPageContent = FreeResourcesPage(page); break; }
             }
+        }
+        if (!subPageContent) {
+            if (page === 'success-wall') { subPageContent = SuccessWallPage(); }
         }
 
         app.innerHTML =
@@ -221,6 +228,7 @@ function init() {
     initScrollReveal();
     handleNavbarScroll();
     initYouTubeFeed();
+    initOfficerMosaic(); // Initialize gallery logic on all pages
 }
 
 // Scroll listeners (Passive for performance)

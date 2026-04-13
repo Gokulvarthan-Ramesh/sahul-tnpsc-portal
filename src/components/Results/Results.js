@@ -1,6 +1,6 @@
 export const Results = () => {
   return `
-    <section class="section pad-tb bg-white" id="results">
+    <section class="section pad-tb bg-gray" id="results">
         <div class="container">
             <div class="common-heading">
                 <span>RESULTS & TESTIMONIALS / முடிவுகள் & சான்றிதழ்கள்</span>

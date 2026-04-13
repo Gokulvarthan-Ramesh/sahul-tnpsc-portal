@@ -92,6 +92,7 @@
   font-weight: 700;
   color: var(--text-dark);
   margin-bottom: 10px;
+  overflow-wrap: break-word;
 }
 
 .ws-body p {
