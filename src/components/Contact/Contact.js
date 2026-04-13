@@ -41,7 +41,7 @@ export const Contact = () => {
                             <div class="ci-icon ci-icon-4"><i class="fas fa-envelope"></i></div>
                             <div class="ci-text">
                                 <h4>Email Us</h4>
-                                <a href="mailto:info@sahultnpsc.com" class="ci-link">info@sahultnpsc.com</a>
+                                <a href="mailto:sahultnpsc4549@gmail.com" class="ci-link">sahultnpsc4549@gmail.com</a>
                             </div>
                         </div>
 
@@ -73,25 +73,25 @@ export const Contact = () => {
                             <h3>Send Us a Message</h3>
                             <p>Fill in the details below and our team will get back to you within 24 hours.</p>
                         </div>
-                        <form class="contact-form" id="contactForm" onsubmit="event.preventDefault(); document.getElementById('formSuccess').style.display='flex';">
+                        <form class="contact-form" id="contactForm">
                             <div class="cf-row">
                                 <div class="cf-field">
                                     <label for="cf-name">Full Name <span>*</span></label>
-                                    <input type="text" id="cf-name" placeholder="Enter your name" required>
+                                    <input type="text" id="cf-name" name="from_name" placeholder="Enter your name" required>
                                 </div>
                                 <div class="cf-field">
                                     <label for="cf-phone">Phone Number <span>*</span></label>
-                                    <input type="tel" id="cf-phone" placeholder="+91 XXXXX XXXXX" required>
+                                    <input type="tel" id="cf-phone" name="phone_number" placeholder="+91 XXXXX XXXXX" required>
                                 </div>
                             </div>
                             <div class="cf-row">
                                 <div class="cf-field">
                                     <label for="cf-email">Email Address</label>
-                                    <input type="email" id="cf-email" placeholder="your@email.com">
+                                    <input type="email" id="cf-email" name="from_email" placeholder="your@email.com">
                                 </div>
                                 <div class="cf-field">
                                     <label for="cf-course">Interested Course</label>
-                                    <select id="cf-course">
+                                    <select id="cf-course" name="course">
                                         <option value="">Select a course</option>
                                         <option value="group1">TNPSC Group 1</option>
                                         <option value="group2">TNPSC Group 2 / 2A</option>
@@ -103,10 +103,10 @@ export const Contact = () => {
                             </div>
                             <div class="cf-field cf-full">
                                 <label for="cf-message">Your Message</label>
-                                <textarea id="cf-message" rows="4" placeholder="Tell us about your preparation level, goals, or any questions..."></textarea>
+                                <textarea id="cf-message" name="message" rows="4" placeholder="Tell us about your preparation level, goals, or any questions..."></textarea>
                             </div>
-                            <button type="submit" class="cf-submit">
-                                <i class="fas fa-paper-plane"></i> Send Message
+                            <button type="submit" class="cf-submit" id="submitBtn">
+                                <i class="fas fa-paper-plane"></i> <span class="btn-text">Send Message</span>
                             </button>
                         </form>
 
@@ -126,4 +126,48 @@ export const Contact = () => {
         </div>
     </section>
   `;
+};
+
+/**
+ * Initialize Contact Form logic
+ * This version redirects directly to WhatsApp
+ */
+export const initContactForm = () => {
+    const form = document.getElementById('contactForm');
+    if (!form) return;
+
+    const submitBtn = document.getElementById('submitBtn');
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        // 1. Get Form Values
+        const formData = new FormData(this);
+        const name = formData.get('from_name');
+        const phone = formData.get('phone_number');
+        const email = formData.get('from_email') || 'Not provided';
+        const course = formData.get('course') || 'General Inquiry';
+        const message = formData.get('message') || 'Interested in your coaching.';
+
+        // 2. Format WhatsApp Message
+        const whatsappMsg = `*New Inquiry from Website*%0A%0A` +
+            `*Name:* ${name}%0A` +
+            `*Phone:* ${phone}%0A` +
+            `*Email:* ${email}%0A` +
+            `*Interested in:* ${course}%0A%0A` +
+            `*Message:* ${message}`;
+
+        // 3. Open WhatsApp
+        const whatsappUrl = `https://wa.me/917598242374?text=${whatsappMsg}`;
+        window.open(whatsappUrl, '_blank');
+
+        // 4. Reset Form (Optional)
+        this.reset();
+        
+        // 5. Show internal success message
+        const successMsg = document.getElementById('formSuccess');
+        form.style.display = 'none';
+        successMsg.style.display = 'flex';
+        successMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
 };

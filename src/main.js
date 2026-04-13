@@ -28,7 +28,7 @@ import { OfficerChats, initOfficerMosaic } from './components/Results/OfficerCha
 import { SuccessWallPage } from './components/Results/SuccessWallPage.js';
 import { Faculty } from './components/Faculty/Faculty.js';
 import { YouTubeFeed, initYouTubeFeed } from './components/YouTubeFeed/YouTubeFeed.js';
-import { Contact } from './components/Contact/Contact.js';
+import { Contact, initContactForm } from './components/Contact/Contact.js';
 import { Footer } from './components/Footer/Footer.js';
 
 // App element
@@ -229,6 +229,7 @@ function init() {
     handleNavbarScroll();
     initYouTubeFeed();
     initOfficerMosaic(); // Initialize gallery logic on all pages
+    initContactForm(); // Initialize contact form logic
 }
 
 // Scroll listeners (Passive for performance)

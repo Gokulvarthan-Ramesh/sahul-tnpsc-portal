@@ -131,7 +131,7 @@ export const Faculty = () => {
                                 <div class="fac-social">
                                     <a href="https://wa.me/917598242374" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                                     <a href="https://youtube.com/@sahultnpsc" title="YouTube"><i class="fab fa-youtube"></i></a>
-                                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.instagram.com/sahultnpsc?igsh=MWIwbzh1MTk5enByaA%3D%3D" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -156,7 +156,7 @@ export const Faculty = () => {
                                 <div class="fac-social">
                                     <a href="https://wa.me/917598242374" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                                     <a href="https://youtube.com/@sahultnpsc" title="YouTube"><i class="fab fa-youtube"></i></a>
-                                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.instagram.com/sahultnpsc?igsh=MWIwbzh1MTk5enByaA%3D%3D" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -181,7 +181,7 @@ export const Faculty = () => {
                                 <div class="fac-social">
                                     <a href="https://wa.me/917598242374" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                                     <a href="https://youtube.com/@sahultnpsc" title="YouTube"><i class="fab fa-youtube"></i></a>
-                                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.instagram.com/sahultnpsc?igsh=MWIwbzh1MTk5enByaA%3D%3D" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -206,7 +206,7 @@ export const Faculty = () => {
                                 <div class="fac-social">
                                     <a href="https://wa.me/917598242374" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                                     <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
-                                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.instagram.com/sahultnpsc?igsh=MWIwbzh1MTk5enByaA%3D%3D" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
                         </div>

@@ -29,7 +29,7 @@ export const Footer = () => {
                         <div class="card-icon"><i class="fas fa-envelope"></i></div>
                         <div class="card-content">
                             <h4>Email Us</h4>
-                            <p>info@sahultnpsc.com</p>
+                            <p>sahultnpsc4549@gmail.com</p>
                         </div>
                     </div>
                 </div>
@@ -46,7 +46,7 @@ export const Footer = () => {
                     <div class="footer-social mt-20">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/sahultnpsc?igsh=MWIwbzh1MTk5enByaA%3D%3D" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
                         <a href="https://youtube.com/@sahultnpsc" target="_blank"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
@@ -73,7 +73,7 @@ export const Footer = () => {
                     <ul class="footer-contact-list">
                         <li><i class="fas fa-map-marker-alt"></i> Trichy, TN</li>
                         <li><i class="fas fa-phone-alt"></i> +91 75982 42374</li>
-                        <li><i class="fas fa-envelope"></i> info@sahultnpsc.com</li>
+                        <li><i class="fas fa-envelope"></i> sahultnpsc4549@gmail.com</li>
                     </ul>
                 </div>
             </div>
