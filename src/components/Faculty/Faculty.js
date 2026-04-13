@@ -102,7 +102,7 @@ export const Faculty = () => {
                     <div class="funfct fun4">
                         <div class="card-icon"><i class="fas fa-chalkboard-teacher"></i></div>
                         <div class="card-content">
-                            <span class="timer" data-to="5">5</span><span>+</span>
+                            <span class="timer" data-to="6">6</span><span>+</span>
                             <p>Expert Mentors</p>
                         </div>
                     </div>
@@ -120,25 +120,25 @@ export const Faculty = () => {
                 <h2>Meet Your Mentors</h2>
                 <p class="heading-subtitle">Learn from the best in TNPSC coaching — experienced, passionate, and dedicated to your success.</p>
             </div>
-            <div class="row grid-faculty">
-                <!-- Sahul Hameed -->
-                <div class="col-lg-3 col-sm-6 mb-30" data-reveal itemprop="employee" itemscope itemtype="https://schema.org/Person">
+            <div class="row grid-faculty justify-content-center">
+                <!-- SAHUL HAMMEED Sir -->
+                <div class="col-lg-4 col-md-6 mb-30" data-reveal itemprop="employee" itemscope itemtype="https://schema.org/Person">
                     <div class="faculty-card-premium">
                         <div class="fac-image">
-                            <img src="/assets/user/Sahul.jpeg" alt="Sahul Hameed - Founder of Sahul TNPSC Circle & Best Current Affairs Mentor in Tamil Nadu" loading="lazy" decoding="async" itemprop="image">
+                            <img src="/assets/user/Sahul.jpeg" alt="SAHUL HAMMEED Sir - Founder of Sahul TNPSC Circle & Expert Mentor for Polity, History, Economics, and Tamil Nadu History" loading="lazy" decoding="async" itemprop="image">
                             <div class="mentor-badge"><i class="fas fa-check-circle"></i> Founder Mentor</div>
                             <div class="fac-overlay">
                                 <div class="fac-social">
-                                    <a href="https://wa.me/917598242374?text=Hi Sahul Sir, I'm interested in your 2026 Current Affairs mentorship batch." title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                    <a href="https://wa.me/917598242374?text=Hi SAHUL HAMMEED Sir, I'm interested in your GS Specialist batch (Polity, History, Economics & TN History)." title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                                     <a href="https://youtube.com/@sahultnpsc" title="YouTube"><i class="fab fa-youtube"></i></a>
                                     <a href="https://www.instagram.com/sahultnpsc?igsh=MWIwbzh1MTk5enByaA%3D%3D" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="fac-info-glass">
-                            <h3 itemprop="name">Sahul Hameed</h3>
-                            <p class="fac-role" itemprop="jobTitle">Founder & Current Affairs</p>
-                            <p class="fac-bio" itemprop="description">Ex-Unacademy Educator with 8+ years of mastery in simplifying complex current affairs and mentoring thousands to success.</p>
+                            <h3 itemprop="name">SAHUL HAMMEED Sir</h3>
+                            <p class="fac-role" itemprop="jobTitle">Founder - Polity, History, Economics & TN History</p>
+                            <p class="fac-bio" itemprop="description">Ex-Unacademy Educator with 8+ years of mastery in simplifying Polity, History, Economics, and Tamil Nadu History, mentoring thousands to success personally guided by SAHUL HAMMEED Sir.</p>
                             <div class="fac-footer">
                                 <span class="badge-exp-premium">8+ Yrs Exp</span>
                                 <div class="fac-rating"><i class="fas fa-star"></i> 5.0</div>
@@ -146,24 +146,24 @@ export const Faculty = () => {
                         </div>
                     </div>
                 </div>
-                <!-- Boopathi Raja -->
-                <div class="col-lg-3 col-sm-6 mb-30" data-reveal itemprop="employee" itemscope itemtype="https://schema.org/Person">
+                <!-- BOOPATHY RAJA SIR -->
+                <div class="col-lg-4 col-md-6 mb-30" data-reveal itemprop="employee" itemscope itemtype="https://schema.org/Person">
                     <div class="faculty-card-premium">
                         <div class="fac-image">
-                            <img src="/assets/user/Boopathi.jpeg" alt="Boopathi Raja - Top TNPSC Tamil Grammar Specialist & Language Faculty" loading="lazy" decoding="async" itemprop="image">
+                            <img src="/assets/user/Boopathi.jpeg" alt="BOOPATHY RAJA SIR - Expert TNPSC General Tamil Faculty at Sahul TNPSC Circle" loading="lazy" decoding="async" itemprop="image">
                             <div class="mentor-badge active">Grammar Expert</div>
                             <div class="fac-overlay">
                                 <div class="fac-social">
-                                    <a href="https://wa.me/917598242374?text=Hi Boopathi Sir, I want to join your Tamil Language Specialization classes for TNPSC 2026." title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                    <a href="https://wa.me/917598242374?text=Hi BOOPATHY RAJA SIR, I want to join your General Tamil classes for TNPSC 2026." title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                                     <a href="https://youtube.com/@sahultnpsc" title="YouTube"><i class="fab fa-youtube"></i></a>
                                     <a href="https://www.instagram.com/sahultnpsc?igsh=MWIwbzh1MTk5enByaA%3D%3D" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="fac-info-glass">
-                            <h3 itemprop="name">Boopathi Raja</h3>
-                            <p class="fac-role" itemprop="jobTitle">Tamil Language Specialist</p>
-                            <p class="fac-bio" itemprop="description">A linguistic powerhouse dedicated to making Tamil grammar and literature high-scoring and effortless for every aspirant.</p>
+                            <h3 itemprop="name">BOOPATHY RAJA SIR</h3>
+                            <p class="fac-role" itemprop="jobTitle">General Tamil</p>
+                            <p class="fac-bio" itemprop="description">A linguistic powerhouse dedicated to making General Tamil high-scoring and effortless for every TNPSC aspirant, guided by BOOPATHY RAJA SIR.</p>
                             <div class="fac-footer">
                                 <span class="badge-exp-premium">Lead Faculty</span>
                                 <div class="fac-rating"><i class="fas fa-star"></i> 4.9</div>
@@ -171,24 +171,24 @@ export const Faculty = () => {
                         </div>
                     </div>
                 </div>
-                <!-- Divya Mam -->
-                <div class="col-lg-3 col-sm-6 mb-30" data-reveal itemprop="employee" itemscope itemtype="https://schema.org/Person">
+                <!-- DIVYA MAM -->
+                <div class="col-lg-4 col-md-6 mb-30" data-reveal itemprop="employee" itemscope itemtype="https://schema.org/Person">
                     <div class="faculty-card-premium">
                         <div class="fac-image">
-                            <img src="/assets/user/Divya.jpeg" alt="Divya Mam - Expert TNPSC Maths and Aptitude Shortcut Specialist" loading="lazy" decoding="async" itemprop="image">
-                            <div class="mentor-badge">Maths Expert</div>
+                            <img src="/assets/user/Divya.jpeg" alt="DIVYA MAM - Expert TNPSC Aptitude and Reasoning Faculty at Sahul TNPSC Circle" loading="lazy" decoding="async" itemprop="image">
+                            <div class="mentor-badge">Aptitude Expert</div>
                             <div class="fac-overlay">
                                 <div class="fac-social">
-                                    <a href="https://wa.me/917598242374?text=Hi Divya Mam, I need help with TNPSC Maths & Aptitude shortcuts for the 2026 exams." title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                    <a href="https://wa.me/917598242374?text=Hi DIVYA MAM, I need help with TNPSC Aptitude & Reasoning for the 2026 exams." title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                                     <a href="https://youtube.com/@sahultnpsc" title="YouTube"><i class="fab fa-youtube"></i></a>
                                     <a href="https://www.instagram.com/sahultnpsc?igsh=MWIwbzh1MTk5enByaA%3D%3D" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="fac-info-glass">
-                            <h3 itemprop="name">Divya</h3>
-                            <p class="fac-role" itemprop="jobTitle">Maths & Aptitude</p>
-                            <p class="fac-bio" itemprop="description">Specialist in shortcuts and logical reasoning, turning the most challenging aptitude problems into quick-win opportunities.</p>
+                            <h3 itemprop="name">DIVYA MAM</h3>
+                            <p class="fac-role" itemprop="jobTitle">Aptitude & Reasoning</p>
+                            <p class="fac-bio" itemprop="description">Specialist in Aptitude and Reasoning, turning the most challenging problems into quick-win opportunities for every TNPSC aspirant, guided by DIVYA MAM.</p>
                             <div class="fac-footer">
                                 <span class="badge-exp-premium">7+ Yrs Exp</span>
                                 <div class="fac-rating"><i class="fas fa-star"></i> 5.0</div>
@@ -196,27 +196,52 @@ export const Faculty = () => {
                         </div>
                     </div>
                 </div>
-                <!-- Sheikh Sir -->
-                <div class="col-lg-3 col-sm-6 mb-30" data-reveal itemprop="employee" itemscope itemtype="https://schema.org/Person">
+                <!-- SHEIK SIR -->
+                <div class="col-lg-4 col-md-6 mb-30" data-reveal itemprop="employee" itemscope itemtype="https://schema.org/Person">
                     <div class="faculty-card-premium">
                         <div class="fac-image">
-                            <img src="/assets/user/Sheikh.jpeg" alt="Sheikh Sir - TNPSC General Science and Current Affairs Mentor" loading="lazy" decoding="async" itemprop="image">
-                            <div class="mentor-badge active">GS Specialist</div>
+                            <img src="/assets/user/Sheikh.jpeg" alt="SHEIK SIR - Expert TNPSC Current Affairs Faculty at Sahul TNPSC Circle" loading="lazy" decoding="async" itemprop="image">
+                            <div class="mentor-badge active">CA Specialist</div>
                             <div class="fac-overlay">
                                 <div class="fac-social">
-                                    <a href="https://wa.me/917598242374?text=Hi Sheikh Sir, I'm interested in your General Science & Current Affairs guidance." title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                    <a href="https://wa.me/917598242374?text=Hi SHEIK SIR, I'm interested in your Current Affairs guidance for TNPSC 2026." title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                                     <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
                                     <a href="https://www.instagram.com/sahultnpsc?igsh=MWIwbzh1MTk5enByaA%3D%3D" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="fac-info-glass">
-                            <h3 itemprop="name">Sheikh</h3>
-                            <p class="fac-role" itemprop="jobTitle">General Science & CA</p>
-                            <p class="fac-bio" itemprop="description">Passionate mentor focused on General Science and exam trends, ensuring aspirants stay updated with precision and clarity.</p>
+                            <h3 itemprop="name">SHEIK SIR</h3>
+                            <p class="fac-role" itemprop="jobTitle">Current Affairs</p>
+                            <p class="fac-bio" itemprop="description">Passionate mentor focused on Current Affairs and exam trends, ensuring aspirants stay updated with precision and clarity, guided by SHEIK SIR.</p>
                             <div class="fac-footer">
                                 <span class="badge-exp-premium">2+ Yrs Exp</span>
                                 <div class="fac-rating"><i class="fas fa-star"></i> 4.8</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- MANIKANDAN SIR -->
+                <div class="col-lg-4 col-md-6 mb-30" data-reveal itemprop="employee" itemscope itemtype="https://schema.org/Person">
+                    <div class="faculty-card-premium">
+                        <div class="fac-image">
+                            <img src="/assets/user/Manikandan.jpeg" alt="MANIKANDAN SIR - Expert TNPSC Geography Faculty at Sahul TNPSC Circle" loading="lazy" decoding="async" itemprop="image">
+                            <div class="mentor-badge">Subject Expert</div>
+                            <div class="fac-overlay">
+                                <div class="fac-social">
+                                    <a href="https://wa.me/917598242374?text=Hi MANIKANDAN SIR, I'm interested in your Geography masterclass for TNPSC 2026." title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                    <a href="https://youtube.com/@sahultnpsc" title="YouTube"><i class="fab fa-youtube"></i></a>
+                                    <a href="https://www.instagram.com/sahultnpsc?igsh=MWIwbzh1MTk5enByaA%3D%3D" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fac-info-glass">
+                            <h3 itemprop="name">MANIKANDAN SIR</h3>
+                            <p class="fac-role" itemprop="jobTitle">Geography</p>
+                            <p class="fac-bio" itemprop="description">Expert in decoding Geography trends, helping aspirants master this high-weightage subject with ease, guided by MANIKANDAN SIR.</p>
+                            <div class="fac-footer">
+                                <span class="badge-exp-premium">Lead Faculty</span>
+                                <div class="fac-rating"><i class="fas fa-star"></i> 5.0</div>
                             </div>
                         </div>
                     </div>

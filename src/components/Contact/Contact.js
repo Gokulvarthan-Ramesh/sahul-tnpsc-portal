@@ -17,7 +17,7 @@ export const Contact = () => {
                             <div class="ci-icon ci-icon-1"><i class="fas fa-map-marker-alt"></i></div>
                             <div class="ci-text">
                                 <h4>Visit Us</h4>
-                                <p itemprop="addressLocality">Trichy</p>
+                                <p itemprop="addressLocality">Pudukottai</p>
                                 <p itemprop="addressRegion">Tamil Nadu, India</p>
                             </div>
                         </div>
@@ -55,7 +55,7 @@ export const Contact = () => {
                         <!-- Map -->
                         <div class="contact-map">
                             <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125406.10702157498!2d78.68411!3d10.80883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baaf50ff2afe5d5%3A0x27498e2ac08fa2a3!2sTiruchirappalli%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1712753200000!5m2!1sen!2sin" 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125323.123456789!2d78.8001!3d10.3833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baa43df8448b7d9%3A0x5765c73e3405da0f!2sPudukottai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1712753200000!5m2!1sen!2sin" 
                                 width="100%" 
                                 height="220" 
                                 style="border:0; border-radius: 16px;" 

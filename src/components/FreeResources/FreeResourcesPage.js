@@ -5,7 +5,7 @@ export const FreeResourcesPage = (page) => {
       tamil: 'இலவச PDF கோப்புகள்',
       icon: 'fas fa-file-pdf',
       color: '#ea3943',
-      description: 'Download high-quality TNPSC study materials, syllabus PDFs, and revision notes for students in Chennai, Coimbatore, and Trichy — completely free.',
+      description: 'Download high-quality TNPSC study materials, syllabus PDFs, and revision notes for students in Chennai, Coimbatore, and Pudukottai — completely free.',
       items: [
         { date: 'New', title: 'TNPSC Group 1 Exam - Complete General Studies PDF Download (2026)', tag: 'Group 1', tagColor: '#4302ae', size: '12 MB' },
         { date: 'New', title: 'Indian Constitution - Important Articles & Schedules PDF Study Material', tag: 'Polity', tagColor: '#fe4c1c', size: '4 MB' },

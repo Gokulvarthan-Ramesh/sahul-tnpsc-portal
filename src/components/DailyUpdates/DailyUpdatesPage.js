@@ -5,7 +5,7 @@ export const DailyUpdatesPage = (page) => {
       tamil: 'தினசரி நடப்பு நிகழ்வுகள்',
       icon: 'fas fa-newspaper',
       color: '#4302ae',
-      description: 'Stay updated with the latest TNPSC-focused daily current affairs curated specifically for Group 1, 2, 4 and VAO exams by our expert mentors in Tamil Nadu, serving students in Chennai, Madurai, and Trichy.',
+      description: 'Stay updated with the latest TNPSC-focused daily current affairs curated specifically for Group 1, 2, 4 and VAO exams by our expert mentors in Tamil Nadu, serving students in Chennai, Madurai, and Pudukottai.',
       items: [
         { date: 'April 10, 2026', title: 'Tamil Nadu State Budget 2026-27 - Critical Analysis for Group 1 & 2', tag: 'State', tagColor: '#4302ae' },
         { date: 'April 9, 2026', title: 'Supreme Court Landmark Verdict on Reservation Policy - UPSC/TNPSC relevance', tag: 'National', tagColor: '#fe4c1c' },

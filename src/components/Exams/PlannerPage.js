@@ -81,25 +81,21 @@ export const PlannerPage = () => {
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Group 1 Services</td>
+                                <td>Group 1 Prelims</td>
                                 <td>January 2026</td>
-                                <td>April 2026</td>
+                                <td>September 6, 2026</td>
                             </tr>
                             <tr>
                                 <td>Group 2 / 2A Services</td>
                                 <td>February 2026</td>
-                                <td>June 2026</td>
+                                <td>October 25, 2026</td>
                             </tr>
                             <tr>
                                 <td>Group 4 & VAO</td>
                                 <td>March 2026</td>
-                                <td>September 2026</td>
+                                <td>December 20, 2026</td>
                             </tr>
-                            <tr>
-                                <td>Combined Engineering Services</td>
-                                <td>April 2026</td>
-                                <td>August 2026</td>
-                            </tr>
+                        
                             <tr>
                                 <td>Assistant / Clerk-Level Exams</td>
                                 <td>May 2026</td>
@@ -140,7 +136,7 @@ export const PlannerPage = () => {
                 </div>
                 <div class="sidebar-card course-cta">
                   <h4>Join Selection Batch</h4>
-                  <p>Start your 2026 preparation with our expert-led batches in Trichy & Online.</p>
+                  <p>Start your 2026 preparation with our expert-led batches in Pudukottai & Online.</p>
                   <a href="#contact-section" class="btn-outline">Enquire Now</a>
                 </div>
               </aside>

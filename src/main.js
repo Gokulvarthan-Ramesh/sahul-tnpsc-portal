@@ -68,7 +68,7 @@ function updateMetadata(page) {
     };
 
     const descriptions = {
-        'home': 'Expert TNPSC coaching for Group 1, 2, 4 and VAO across Tamil Nadu. Online and Offline classes with expert mentorship.',
+        'home': 'Expert TNPSC coaching for Group 1, 2, 4 and VAO across Tamil Nadu. Online and Offline classes with expert mentorship under SAHUL HAMMEED Sir.',
         'daily-ca': 'Access daily TNPSC focused current affairs curated by subject experts. Stay ahead in your preparation.',
         'exam-notifications': 'Latest update on TNPSC notifications, exam dates, results, and curriculum changes.',
         'important-pdfs': 'Download essential PDFs including Samacheer Kalvi books, study notes, and shortcut materials.',

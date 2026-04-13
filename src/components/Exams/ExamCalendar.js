@@ -24,7 +24,7 @@ export const ExamCalendar = () => {
                             <tr>
                                 <td><strong>TNPSC Group 4 & VAO</strong></td>
                                 <td>Expected June 2026</td>
-                                <td>September 2026</td>
+                                <td>December 20, 2026</td>
                                 <td class="text-center"><span class="status-pill status-upcoming">Upcoming</span></td>
                             </tr>
                             <tr class="row-special">
@@ -37,21 +37,16 @@ export const ExamCalendar = () => {
                             <tr>
                                 <td><strong>TNPSC Group 2 & 2A</strong></td>
                                 <td>Expected April 2026</td>
-                                <td class="tba">July 2026</td>
+                                <td>October 25, 2026</td>
                                 <td class="text-center"><span class="status-pill status-alert">Batch Starting</span></td>
                             </tr>
                             <tr>
                                 <td><strong>TNPSC Group 1</strong></td>
                                 <td>May 2026</td>
-                                <td>August 2026</td>
+                                <td>September 6, 2026</td>
                                 <td class="text-center"><span class="status-pill status-upcoming">Upcoming</span></td>
                             </tr>
-                            <tr>
-                                <td><strong>Combined Technical Services</strong></td>
-                                <td>Announced</td>
-                                <td>June 15, 2026</td>
-                                <td class="text-center"><span class="status-pill status-open">Apply Now</span></td>
-                            </tr>
+                          
                         </tbody>
                     </table>
                 </div>
@@ -62,7 +57,7 @@ export const ExamCalendar = () => {
                         <div class="card-status"><span class="status-pill status-upcoming">Upcoming</span></div>
                         <h4>TNPSC Group 4 & VAO</h4>
                         <div class="card-detail"><span>Notification:</span> Expected June 2026</div>
-                        <div class="card-detail"><span>Exam Date:</span> September 2026</div>
+                        <div class="card-detail"><span>Exam Date:</span> December 20, 2026</div>
                     </div>
                     
                     <div class="mobile-planner-promo">
@@ -75,22 +70,17 @@ export const ExamCalendar = () => {
                         <div class="card-status"><span class="status-pill status-alert">Batch Starting</span></div>
                         <h4>TNPSC Group 2 & 2A</h4>
                         <div class="card-detail"><span>Notification:</span> Expected April 2026</div>
-                        <div class="card-detail"><span>Exam Date:</span> July 2026</div>
+                        <div class="card-detail"><span>Exam Date:</span> October 25, 2026</div>
                     </div>
 
                     <div class="exam-card-mobile">
                         <div class="card-status"><span class="status-pill status-upcoming">Upcoming</span></div>
                         <h4>TNPSC Group 1</h4>
                         <div class="card-detail"><span>Notification:</span> May 2026</div>
-                        <div class="card-detail"><span>Exam Date:</span> August 2026</div>
+                        <div class="card-detail"><span>Exam Date:</span> September 6, 2026</div>
                     </div>
 
-                    <div class="exam-card-mobile">
-                        <div class="card-status"><span class="status-pill status-open">Apply Now</span></div>
-                        <h4>Combined Tech Services</h4>
-                        <div class="card-detail"><span>Notification:</span> Announced</div>
-                        <div class="card-detail"><span>Exam Date:</span> June 15, 2026</div>
-                    </div>
+                    
                 </div>
 
                 <!-- Event Schema (Rich Results) -->
@@ -100,7 +90,7 @@ export const ExamCalendar = () => {
                     "@context": "https://schema.org",
                     "@type": "Event",
                     "name": "TNPSC Group 4 & VAO 2026 Exam",
-                    "startDate": "2026-09-01",
+                    "startDate": "2026-12-20",
                     "location": { "@type": "Place", "name": "Tamil Nadu, India" },
                     "description": "Mass recruitment exam for Group 4 and VAO posts conducted by TNPSC."
                   },
@@ -108,7 +98,7 @@ export const ExamCalendar = () => {
                     "@context": "https://schema.org",
                     "@type": "Event",
                     "name": "TNPSC Group 1 Services 2026",
-                    "startDate": "2026-08-01",
+                    "startDate": "2026-09-06",
                     "location": { "@type": "Place", "name": "Tamil Nadu, India" },
                     "description": "Premium recruitment exam for Group 1 gazetted posts in Tamil Nadu."
                   }

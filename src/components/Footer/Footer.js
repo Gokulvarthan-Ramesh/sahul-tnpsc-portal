@@ -9,7 +9,7 @@ export const Footer = () => {
                         <div class="card-icon"><i class="fas fa-map-marker-alt"></i></div>
                         <div class="card-content">
                             <h4>Address</h4>
-                            <p>Trichy, Tamil Nadu, India</p>
+                            <p>Pudukottai, Tamil Nadu, India</p>
                         </div>
                     </div>
                 </div>
@@ -42,7 +42,7 @@ export const Footer = () => {
                     <div class="footer-logo mb-20">
                         <img src="/assets/logo.svg" alt="Sahul TNPSC Logo" class="main-logo" width="70" height="70" style="max-height: 70px;">
                     </div>
-                    <p class="text-white-50">Sahul TNPSC Circle is a premier coaching destination in Trichy, dedicated to empowering TNPSC aspirants with selection-focused mentorship and high-quality coaching.</p>
+                    <p class="text-white-50">Sahul TNPSC Circle is a premier coaching destination in Pudukottai, dedicated to empowering TNPSC aspirants with selection-focused mentorship and high-quality coaching.</p>
                     <div class="footer-social mt-20">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -55,7 +55,7 @@ export const Footer = () => {
                     <ul class="footer-links-list">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#products">Our Courses</a></li>
-                        <li><a href="#about">About Sahul</a></li>
+                        <li><a href="#about">About SAHUL HAMMEED Sir</a></li>
                         <li><a href="#faculty">Expert Faculty</a></li>
                     </ul>
                 </div>

@@ -12,7 +12,7 @@ export const Features = () => {
                     <div class="service-card-app s-card-1">
                         <div class="card-image">
                              <img src="/assets/tnpsc_arambam.png" alt="TNPSC Group 1 Coaching Tamil Nadu - Sahul TNPSC Circle" loading="lazy" decoding="async" itemprop="image">
-                            <div class="course-badge" itemprop="courseMode">Arambam Batch</div>
+                            <div class="course-badge" itemprop="courseMode">Vithai Batch</div>
                         </div>
                         <div class="card-content">
                             <span class="tamil-label">குரூப் 1 (துணை ஆட்சியர் / டிஎஸ்பி)</span>
@@ -24,7 +24,7 @@ export const Features = () => {
                                     <li><i class="fas fa-history"></i> <strong>Validity:</strong> 18 Months</li>
                                     <li><i class="fas fa-wallet"></i> <strong>Fees:</strong> <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">₹ <span itemprop="price">5555</span><meta itemprop="priceCurrency" content="INR"></span> (EMI Available)</li>
                                     <li><i class="fas fa-chart-line"></i> <strong>Level:</strong> Recent Trend Based Class</li>
-                                    <li><i class="fas fa-user-tie"></i> <strong>Faculty:</strong> Sahul, Boopathi, Divya & Sheikh</li>
+                                    <li><i class="fas fa-user-tie"></i> <strong>Faculty:</strong> SAHUL HAMMEED Sir, BOOPATHY RAJA SIR, DIVYA MAM, SHEIK SIR & MANIKANDAN SIR</li>
                                 </ul>
                             </div>
                             <a href="https://wa.me/917598242374?text=Hi, I want to enroll in the TNPSC Group 1 Comprehensive Selection Batch 2026." class="btn-main mt-3 w-100 text-center" aria-label="Enroll in TNPSC Group 1 Coaching">Enroll Now</a>
@@ -48,7 +48,7 @@ export const Features = () => {
                                     <li><i class="fas fa-history"></i> <strong>Validity:</strong> 18 Months</li>
                                     <li><i class="fas fa-wallet"></i> <strong>Fees:</strong> <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">₹ <span itemprop="price">5555</span><meta itemprop="priceCurrency" content="INR"></span> (EMI Available)</li>
                                     <li><i class="fas fa-chart-line"></i> <strong>Level:</strong> Recent Trend Based Class</li>
-                                    <li><i class="fas fa-user-tie"></i> <strong>Faculty:</strong> Boopathi, Sahul, Divya & Sheikh</li>
+                                    <li><i class="fas fa-user-tie"></i> <strong>Faculty:</strong> BOOPATHY RAJA SIR, SAHUL HAMMEED Sir, DIVYA MAM, SHEIK SIR & MANIKANDAN SIR</li>
                                 </ul>
                             </div>
                             <a href="https://wa.me/917598242374?text=Hi, I want to enroll in the TNPSC Group 2 & 2A Master Program 2026." class="btn-main mt-3 w-100 text-center" aria-label="Enroll in TNPSC Group 2 Coaching">Enroll Now</a>
@@ -72,7 +72,7 @@ export const Features = () => {
                                     <li><i class="fas fa-history"></i> <strong>Validity:</strong> 18 Months</li>
                                     <li><i class="fas fa-wallet"></i> <strong>Fees:</strong> <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">₹ <span itemprop="price">5555</span><meta itemprop="priceCurrency" content="INR"></span> (EMI Available)</li>
                                     <li><i class="fas fa-chart-line"></i> <strong>Level:</strong> Recent Trend Based Class</li>
-                                    <li><i class="fas fa-user-tie"></i> <strong>Faculty:</strong> Sheikh, Sahul, Boopathi & Divya</li>
+                                    <li><i class="fas fa-user-tie"></i> <strong>Faculty:</strong> MANIKANDAN SIR, SHEIK SIR, SAHUL HAMMEED Sir, BOOPATHY RAJA SIR & DIVYA MAM</li>
                                 </ul>
                             </div>
                             <a href="https://wa.me/917598242374?text=Hi, I want to enroll in the TNPSC Group 4 & VAO Goal Program 2026." class="btn-main mt-3 w-100 text-center" aria-label="Enroll in TNPSC Group 4 and VAO Coaching">Enroll Now</a>
