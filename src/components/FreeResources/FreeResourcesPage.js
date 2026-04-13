@@ -7,11 +7,11 @@ export const FreeResourcesPage = (page) => {
       color: '#ea3943',
       description: 'Download high-quality TNPSC study materials, syllabus PDFs, and revision notes for students in Chennai, Coimbatore, and Trichy — completely free.',
       items: [
-        { date: 'New', title: 'TNPSC Group 1 Exam - Complete General Studies PDF Download (2025)', tag: 'Group 1', tagColor: '#4302ae', size: '12 MB' },
+        { date: 'New', title: 'TNPSC Group 1 Exam - Complete General Studies PDF Download (2026)', tag: 'Group 1', tagColor: '#4302ae', size: '12 MB' },
         { date: 'New', title: 'Indian Constitution - Important Articles & Schedules PDF Study Material', tag: 'Polity', tagColor: '#fe4c1c', size: '4 MB' },
         { date: 'Popular', title: 'Unit 8 & 9 Tamil Nadu History - Complete School Book Notes (Tamil)', tag: 'History', tagColor: '#ea3943', size: '8 MB' },
         { date: 'Popular', title: 'TNPSC Aptitude & Mental Ability - Shortcut Formulas PDF Guide', tag: 'Aptitude', tagColor: '#00befa', size: '2 MB' },
-        { date: 'Updated', title: 'Indian Economy & Tamil Nadu Budget 2025 - Exam Special Notes PDF', tag: 'Economy', tagColor: '#ff007a', size: '5 MB' },
+        { date: 'Updated', title: 'Indian Economy & Tamil Nadu Budget 2026 - Exam Special Notes PDF', tag: 'Economy', tagColor: '#ff007a', size: '5 MB' },
         { date: 'Updated', title: 'Science & Technology - One Liner PDF', tag: 'Science', tagColor: '#4302ae', size: '3 MB' },
         { date: 'Essential', title: 'Geography - India & Tamil Nadu Maps Collection', tag: 'Geography', tagColor: '#fe4c1c', size: '15 MB' },
         { date: 'Essential', title: 'Current Affairs 2024 - Yearly Compilation PDF', tag: 'CA', tagColor: '#00befa', size: '20 MB' },
@@ -60,7 +60,7 @@ export const FreeResourcesPage = (page) => {
       items: [
         { date: 'Apr 13', title: 'Weekly Test #42 - Indian History & Culture (50 MCQs)', tag: 'Upcoming', tagColor: '#00befa', size: '60 min' },
         { date: 'Apr 6', title: 'Weekly Test #41 - Tamil Nadu Geography & Economy', tag: 'Completed', tagColor: '#4302ae', size: '60 min' },
-        { date: 'Mar 30', title: 'Weekly Test #40 - Current Affairs March 2025', tag: 'Completed', tagColor: '#4302ae', size: '45 min' },
+        { date: 'Mar 30', title: 'Weekly Test #40 - Current Affairs March 2026', tag: 'Completed', tagColor: '#4302ae', size: '45 min' },
         { date: 'Mar 23', title: 'Weekly Test #39 - Indian Polity & Governance', tag: 'Completed', tagColor: '#4302ae', size: '60 min' },
         { date: 'Mar 16', title: 'Weekly Test #38 - General Science Full Syllabus', tag: 'Completed', tagColor: '#4302ae', size: '60 min' },
         { date: 'Mar 9', title: 'Weekly Test #37 - Aptitude & Mental Ability', tag: 'Completed', tagColor: '#4302ae', size: '45 min' },

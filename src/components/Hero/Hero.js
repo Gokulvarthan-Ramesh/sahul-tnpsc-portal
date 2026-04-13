@@ -1,13 +1,21 @@
 export const Hero = () => {
     return `
+    <style>
+        .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0; }
+    </style>
     <section class="hero-slider hero-style" id="home">
         <div class="swiper-container mySwiper">
+            <div class="hero-content">
+                <!-- Hidden SEO Headings for Keyword Density -->
+                <h1 class="seo-title sr-only">Best TNPSC Coaching Centre in Trichy, Tamil Nadu - Selection Experts</h1>
+                <h2 class="seo-subtitle sr-only">Top TNPSC Academy for Group 1, Group 2, 2A, Group 4 & VAO Recruitment Exams 2026</h2>
+            </div>
             <div class="swiper-wrapper">
                 <!-- Slide 1 (LCP - Eager Loading) -->
                 <div class="swiper-slide">
                     <div class="slide-inner">
                         <img src="/assets/tnpsc_hero.png" 
-                             alt="Sahul TNPSC Circle Training" class="hero-bg-img" fetchpriority="high" decoding="sync">
+                             alt="Sahul TNPSC Circle selection batch - Best TNPSC Coaching Center in Trichy and Chennai 2026" class="hero-bg-img" fetchpriority="high" decoding="sync" width="1920" height="1080">
                         <div class="gradient-overlay"></div>
                         <div class="container">
                             <div class="row">
@@ -26,12 +34,12 @@ export const Hero = () => {
                 <div class="swiper-slide">
                     <div class="slide-inner">
                         <img src="/assets/tnpsc_batch.png" 
-                             alt="Library Study Sessions - New Batch VIDHAI" class="hero-bg-img" loading="lazy" decoding="async">
+                             alt="TNPSC Group 4 and VAO Selection Batch 2026 - Sahul TNPSC Circle Admissions Open" class="hero-bg-img" loading="lazy" decoding="async" width="1920" height="1080">
                         <div class="gradient-overlay"></div>
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-8">
-                                    <h1 data-swiper-parallax="300" class="text-white">New Batches: Arambam & Vithai <br>Admission Open</h1>
+                                    <h2 data-swiper-parallax="300" class="text-white">New Batches: Arambam & Vithai <br>Admission Open</h2>
                                     <p data-swiper-parallax="400" class="text-white mt-3">Comprehensive 6-Month Selection Batch. Tamil Nadu's Premier TNPSC Coaching @ ₹5555.</p>
                                     <div data-swiper-parallax="500" class="mt-4">
                                         <a href="https://wa.me/917598242374" class="btn-main">Enroll Today <i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
@@ -45,12 +53,12 @@ export const Hero = () => {
                 <div class="swiper-slide">
                     <div class="slide-inner">
                         <img src="/assets/tnpsc_experts.png" 
-                             alt="Expert Faculty Mentorship - Sahul TNPSC Circle" class="hero-bg-img" loading="lazy" decoding="async">
+                             alt="Expert TNPSC Mentors Sahul and Boopathi Raja - Top TNPSC Academy in Tamil Nadu success guidance" class="hero-bg-img" loading="lazy" decoding="async" width="1920" height="1080">
                         <div class="gradient-overlay"></div>
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-8">
-                                    <h1 data-swiper-parallax="300" class="text-white">Learn from Experts <br>Sahul, Boopathi Raja, Divya & Sheikh</h1>
+                                    <h2 data-swiper-parallax="300" class="text-white">Learn from Experts <br>Sahul, Boopathi Raja, Divya & Sheikh</h2>
                                     <p data-swiper-parallax="400" class="text-white mt-3">Ex-Unacademy Educators and Subject Specialists. Dedicated mentorship for your TNPSC success.</p>
                                     <div data-swiper-parallax="500" class="mt-4">
                                         <a href="https://wa.me/917598242374" class="btn-main">Meet Our Faculty <i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>

@@ -1,28 +1,28 @@
 export const Features = () => {
   return `
-    <section class="section service-section pad-tb bg-light" id="products">
+    <section class="section service-section pad-tb bg-light" id="products" itemscope itemtype="https://schema.org/Course">
         <div class="container">
             <div class="common-heading">
                 <span>OUR COURSES / நமது பாடப்பிரிவுகள்</span>
-                <h2>Master Your TNPSC Exams</h2>
+                <h2 itemprop="name">Master Your TNPSC Exams</h2>
             </div>
             <div class="row grid-services">
                 <!-- Group 1 -->
-                <div class="col-lg-4 col-sm-6 mb-30" data-reveal>
+                <div class="col-lg-4 col-sm-6 mb-30" data-reveal itemprop="hasCourseInstance" itemscope itemtype="https://schema.org/CourseInstance">
                     <div class="service-card-app s-card-1">
                         <div class="card-image">
-                             <img src="/assets/tnpsc_arambam.png" alt="TNPSC Group 1 Coaching Tamil Nadu - Sahul TNPSC Circle" loading="lazy" decoding="async">
-                            <div class="course-badge">Arambam Batch</div>
+                             <img src="/assets/tnpsc_arambam.png" alt="TNPSC Group 1 Coaching Tamil Nadu - Sahul TNPSC Circle" loading="lazy" decoding="async" itemprop="image">
+                            <div class="course-badge" itemprop="courseMode">Arambam Batch</div>
                         </div>
                         <div class="card-content">
                             <span class="tamil-label">குரூப் 1 (துணை ஆட்சியர் / டிஎஸ்பி)</span>
-                            <h3>TNPSC Group 1</h3>
+                            <h3 itemprop="name">TNPSC Group 1</h3>
                             <div class="course-details">
-                                <ul>
+                                <ul itemprop="syllabus">
                                     <li><i class="fas fa-book-open"></i> <strong>Subjects:</strong> GS, Unit 8 & 9, Maths</li>
-                                    <li><i class="fas fa-clock"></i> <strong>Duration:</strong> 6 Months</li>
+                                    <li><i class="fas fa-clock"></i> <strong>Duration:</strong> <span itemprop="duration">6 Months</span></li>
                                     <li><i class="fas fa-history"></i> <strong>Validity:</strong> 18 Months</li>
-                                    <li><i class="fas fa-wallet"></i> <strong>Fees:</strong> ₹ 5555 (EMI Available)</li>
+                                    <li><i class="fas fa-wallet"></i> <strong>Fees:</strong> <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">₹ <span itemprop="price">5555</span><meta itemprop="priceCurrency" content="INR"></span> (EMI Available)</li>
                                     <li><i class="fas fa-chart-line"></i> <strong>Level:</strong> Recent Trend Based Class</li>
                                     <li><i class="fas fa-user-tie"></i> <strong>Faculty:</strong> Sahul, Boopathi, Divya & Sheikh</li>
                                 </ul>
@@ -32,21 +32,21 @@ export const Features = () => {
                     </div>
                 </div>
                 <!-- Group 2 / 2A -->
-                <div class="col-lg-4 col-sm-6 mb-30" data-reveal>
+                <div class="col-lg-4 col-sm-6 mb-30" data-reveal itemprop="hasCourseInstance" itemscope itemtype="https://schema.org/CourseInstance">
                     <div class="service-card-app s-card-2">
                         <div class="card-image">
-                             <img src="/assets/tnpsc_vithai.png" alt="TNPSC Group 2 and 2A Coaching - Best Center in Tamil Nadu" loading="lazy" decoding="async">
-                            <div class="course-badge">Vithai Batch</div>
+                             <img src="/assets/tnpsc_vithai.png" alt="TNPSC Group 2 and 2A Coaching - Best Center in Tamil Nadu" loading="lazy" decoding="async" itemprop="image">
+                            <div class="course-badge" itemprop="courseMode">Vithai Batch</div>
                         </div>
                         <div class="card-content">
                             <span class="tamil-label">குரூப் 2 / 2ஏ (நேர்காணல் / அல்லாதவை)</span>
-                            <h3>TNPSC Group 2 / 2A</h3>
+                            <h3 itemprop="name">TNPSC Group 2 / 2A</h3>
                             <div class="course-details">
-                                <ul>
+                                <ul itemprop="syllabus">
                                     <li><i class="fas fa-book-open"></i> <strong>Subjects:</strong> Tamil/English, GS, Apti</li>
-                                    <li><i class="fas fa-clock"></i> <strong>Duration:</strong> 6 Months</li>
+                                    <li><i class="fas fa-clock"></i> <strong>Duration:</strong> <span itemprop="duration">6 Months</span></li>
                                     <li><i class="fas fa-history"></i> <strong>Validity:</strong> 18 Months</li>
-                                    <li><i class="fas fa-wallet"></i> <strong>Fees:</strong> ₹ 5555 (EMI Available)</li>
+                                    <li><i class="fas fa-wallet"></i> <strong>Fees:</strong> <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">₹ <span itemprop="price">5555</span><meta itemprop="priceCurrency" content="INR"></span> (EMI Available)</li>
                                     <li><i class="fas fa-chart-line"></i> <strong>Level:</strong> Recent Trend Based Class</li>
                                     <li><i class="fas fa-user-tie"></i> <strong>Faculty:</strong> Boopathi, Sahul, Divya & Sheikh</li>
                                 </ul>
@@ -56,21 +56,21 @@ export const Features = () => {
                     </div>
                 </div>
                 <!-- Group 4 & VAO -->
-                <div class="col-lg-4 col-sm-6 mb-30" data-reveal>
+                <div class="col-lg-4 col-sm-6 mb-30" data-reveal itemprop="hasCourseInstance" itemscope itemtype="https://schema.org/CourseInstance">
                     <div class="service-card-app s-card-3">
                         <div class="card-image">
-                             <img src="/assets/tnpsc_vithai.png" alt="TNPSC Group 4 and VAO Coaching - Village Administrative Officer Exam" loading="lazy" decoding="async">
-                            <div class="course-badge">Vithai Batch</div>
+                             <img src="/assets/tnpsc_vithai.png" alt="TNPSC Group 4 and VAO Coaching - Village Administrative Officer Exam" loading="lazy" decoding="async" itemprop="image">
+                            <div class="course-badge" itemprop="courseMode">Vithai Batch</div>
                         </div>
                         <div class="card-content">
                             <span class="tamil-label">குரூப் 4 மற்றும் விஏஓ (இளநிலை உதவியாளர்)</span>
-                            <h3>TNPSC Group 4 & VAO</h3>
+                            <h3 itemprop="name">TNPSC Group 4 & VAO</h3>
                             <div class="course-details">
-                                <ul>
+                                <ul itemprop="syllabus">
                                     <li><i class="fas fa-book-open"></i> <strong>Subjects:</strong> General Tamil, GS, Maths</li>
-                                    <li><i class="fas fa-clock"></i> <strong>Duration:</strong> 6 Months</li>
+                                    <li><i class="fas fa-clock"></i> <strong>Duration:</strong> <span itemprop="duration">6 Months</span></li>
                                     <li><i class="fas fa-history"></i> <strong>Validity:</strong> 18 Months</li>
-                                    <li><i class="fas fa-wallet"></i> <strong>Fees:</strong> ₹ 5555 (EMI Available)</li>
+                                    <li><i class="fas fa-wallet"></i> <strong>Fees:</strong> <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">₹ <span itemprop="price">5555</span><meta itemprop="priceCurrency" content="INR"></span> (EMI Available)</li>
                                     <li><i class="fas fa-chart-line"></i> <strong>Level:</strong> Recent Trend Based Class</li>
                                     <li><i class="fas fa-user-tie"></i> <strong>Faculty:</strong> Sheikh, Sahul, Boopathi & Divya</li>
                                 </ul>

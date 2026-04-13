@@ -1,3 +1,9 @@
+# Sahul TNPSC Circle Robots.txt
 User-agent: *
 Allow: /
+
+# Sitemaps
 Sitemap: https://sahultnpsc.com/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 10

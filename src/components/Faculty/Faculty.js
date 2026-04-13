@@ -46,7 +46,7 @@ export const Faculty = () => {
                 <div class="col-lg-6" data-reveal>
                     <div class="about-image-wrapper">
                         <div class="image-inner">
-                            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1000&auto=format&fm=webp" alt="Premium Government Coaching Gateway - Sahul TNPSC Circle Excellence" class="img-fluid" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1000&auto=format&fm=webp" alt="Best Corporate TNPSC Coaching Environment in Tamil Nadu - Sahul Academy" class="img-fluid" loading="lazy">
                             <div class="image-overlay-decoration"></div>
                         </div>
                         <div class="experience-floating-badge">
@@ -122,10 +122,10 @@ export const Faculty = () => {
             </div>
             <div class="row grid-faculty">
                 <!-- Sahul Hameed -->
-                <div class="col-lg-3 col-sm-6 mb-30" data-reveal>
+                <div class="col-lg-3 col-sm-6 mb-30" data-reveal itemprop="employee" itemscope itemtype="https://schema.org/Person">
                     <div class="faculty-card-premium">
                         <div class="fac-image">
-                            <img src="/assets/user/Sahul.jpeg" alt="Sahul Hameed - Founder of Sahul TNPSC Circle & Current Affairs Expert" loading="lazy" decoding="async">
+                            <img src="/assets/user/Sahul.jpeg" alt="Sahul Hameed - Founder of Sahul TNPSC Circle & Best Current Affairs Mentor in Tamil Nadu" loading="lazy" decoding="async" itemprop="image">
                             <div class="mentor-badge"><i class="fas fa-check-circle"></i> Founder Mentor</div>
                             <div class="fac-overlay">
                                 <div class="fac-social">
@@ -136,9 +136,9 @@ export const Faculty = () => {
                             </div>
                         </div>
                         <div class="fac-info-glass">
-                            <h3>Sahul Hameed</h3>
-                            <p class="fac-role">Founder & Current Affairs</p>
-                            <p class="fac-bio">Ex-Unacademy Educator with 8+ years of mastery in simplifying complex current affairs and mentoring thousands to success.</p>
+                            <h3 itemprop="name">Sahul Hameed</h3>
+                            <p class="fac-role" itemprop="jobTitle">Founder & Current Affairs</p>
+                            <p class="fac-bio" itemprop="description">Ex-Unacademy Educator with 8+ years of mastery in simplifying complex current affairs and mentoring thousands to success.</p>
                             <div class="fac-footer">
                                 <span class="badge-exp-premium">8+ Yrs Exp</span>
                                 <div class="fac-rating"><i class="fas fa-star"></i> 5.0</div>
@@ -147,10 +147,10 @@ export const Faculty = () => {
                     </div>
                 </div>
                 <!-- Boopathi Raja -->
-                <div class="col-lg-3 col-sm-6 mb-30" data-reveal>
+                <div class="col-lg-3 col-sm-6 mb-30" data-reveal itemprop="employee" itemscope itemtype="https://schema.org/Person">
                     <div class="faculty-card-premium">
                         <div class="fac-image">
-                            <img src="/assets/user/Boopathi.jpeg" alt="Boopathi Raja - Expert Tamil Language Faculty for TNPSC" loading="lazy" decoding="async">
+                            <img src="/assets/user/Boopathi.jpeg" alt="Boopathi Raja - Top TNPSC Tamil Grammar Specialist & Language Faculty" loading="lazy" decoding="async" itemprop="image">
                             <div class="mentor-badge active">Grammar Expert</div>
                             <div class="fac-overlay">
                                 <div class="fac-social">
@@ -161,9 +161,9 @@ export const Faculty = () => {
                             </div>
                         </div>
                         <div class="fac-info-glass">
-                            <h3>Boopathi Raja</h3>
-                            <p class="fac-role">Tamil Language Specialist</p>
-                            <p class="fac-bio">A linguistic powerhouse dedicated to making Tamil grammar and literature high-scoring and effortless for every aspirant.</p>
+                            <h3 itemprop="name">Boopathi Raja</h3>
+                            <p class="fac-role" itemprop="jobTitle">Tamil Language Specialist</p>
+                            <p class="fac-bio" itemprop="description">A linguistic powerhouse dedicated to making Tamil grammar and literature high-scoring and effortless for every aspirant.</p>
                             <div class="fac-footer">
                                 <span class="badge-exp-premium">Lead Faculty</span>
                                 <div class="fac-rating"><i class="fas fa-star"></i> 4.9</div>
@@ -172,10 +172,10 @@ export const Faculty = () => {
                     </div>
                 </div>
                 <!-- Divya Mam -->
-                <div class="col-lg-3 col-sm-6 mb-30" data-reveal>
+                <div class="col-lg-3 col-sm-6 mb-30" data-reveal itemprop="employee" itemscope itemtype="https://schema.org/Person">
                     <div class="faculty-card-premium">
                         <div class="fac-image">
-                            <img src="/assets/user/Divya.jpeg" alt="Divya Mam - TNPSC Maths and Aptitude Specialist" loading="lazy" decoding="async">
+                            <img src="/assets/user/Divya.jpeg" alt="Divya Mam - Expert TNPSC Maths and Aptitude Shortcut Specialist" loading="lazy" decoding="async" itemprop="image">
                             <div class="mentor-badge">Maths Expert</div>
                             <div class="fac-overlay">
                                 <div class="fac-social">
@@ -186,9 +186,9 @@ export const Faculty = () => {
                             </div>
                         </div>
                         <div class="fac-info-glass">
-                            <h3>Divya</h3>
-                            <p class="fac-role">Maths & Aptitude</p>
-                            <p class="fac-bio">Specialist in shortcuts and logical reasoning, turning the most challenging aptitude problems into quick-win opportunities.</p>
+                            <h3 itemprop="name">Divya</h3>
+                            <p class="fac-role" itemprop="jobTitle">Maths & Aptitude</p>
+                            <p class="fac-bio" itemprop="description">Specialist in shortcuts and logical reasoning, turning the most challenging aptitude problems into quick-win opportunities.</p>
                             <div class="fac-footer">
                                 <span class="badge-exp-premium">7+ Yrs Exp</span>
                                 <div class="fac-rating"><i class="fas fa-star"></i> 5.0</div>
@@ -197,10 +197,10 @@ export const Faculty = () => {
                     </div>
                 </div>
                 <!-- Sheikh Sir -->
-                <div class="col-lg-3 col-sm-6 mb-30" data-reveal>
+                <div class="col-lg-3 col-sm-6 mb-30" data-reveal itemprop="employee" itemscope itemtype="https://schema.org/Person">
                     <div class="faculty-card-premium">
                         <div class="fac-image">
-                            <img src="/assets/user/Sheikh.jpeg" alt="Sheikh Sir - Current Affairs Mentor for Govt Exams" loading="lazy" decoding="async">
+                            <img src="/assets/user/Sheikh.jpeg" alt="Sheikh Sir - TNPSC General Science and Current Affairs Mentor" loading="lazy" decoding="async" itemprop="image">
                             <div class="mentor-badge active">GS Specialist</div>
                             <div class="fac-overlay">
                                 <div class="fac-social">
@@ -211,9 +211,9 @@ export const Faculty = () => {
                             </div>
                         </div>
                         <div class="fac-info-glass">
-                            <h3>Sheikh</h3>
-                            <p class="fac-role">General Science & CA</p>
-                            <p class="fac-bio">Passionate mentor focused on General Science and exam trends, ensuring aspirants stay updated with precision and clarity.</p>
+                            <h3 itemprop="name">Sheikh</h3>
+                            <p class="fac-role" itemprop="jobTitle">General Science & CA</p>
+                            <p class="fac-bio" itemprop="description">Passionate mentor focused on General Science and exam trends, ensuring aspirants stay updated with precision and clarity.</p>
                             <div class="fac-footer">
                                 <span class="badge-exp-premium">2+ Yrs Exp</span>
                                 <div class="fac-rating"><i class="fas fa-star"></i> 4.8</div>

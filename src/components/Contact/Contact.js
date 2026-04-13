@@ -13,11 +13,12 @@ export const Contact = () => {
                 <div class="col-lg-5 mb-30" data-reveal>
                     <div class="contact-info-box">
                         <!-- Info Cards -->
-                        <div class="ci-card">
+                        <div class="ci-card" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
                             <div class="ci-icon ci-icon-1"><i class="fas fa-map-marker-alt"></i></div>
                             <div class="ci-text">
                                 <h4>Visit Us</h4>
-                                <p>Trichy, Tamil Nadu, India</p>
+                                <p itemprop="addressLocality">Trichy</p>
+                                <p itemprop="addressRegion">Tamil Nadu, India</p>
                             </div>
                         </div>
 
@@ -25,7 +26,7 @@ export const Contact = () => {
                             <div class="ci-icon ci-icon-2"><i class="fas fa-phone-alt"></i></div>
                             <div class="ci-text">
                                 <h4>Call Us</h4>
-                                <a href="tel:+917598242374" class="ci-link">+91 75982 42374</a>
+                                <a href="tel:+917598242374" class="ci-link" itemprop="telephone">+91 75982 42374</a>
                             </div>
                         </div>
 
@@ -41,7 +42,7 @@ export const Contact = () => {
                             <div class="ci-icon ci-icon-4"><i class="fas fa-envelope"></i></div>
                             <div class="ci-text">
                                 <h4>Email Us</h4>
-                                <a href="mailto:sahultnpsc4549@gmail.com" class="ci-link">sahultnpsc4549@gmail.com</a>
+                                <a href="mailto:sahultnpsc4549@gmail.com" class="ci-link" itemprop="email">sahultnpsc4549@gmail.com</a>
                             </div>
                         </div>
 
@@ -77,21 +78,21 @@ export const Contact = () => {
                             <div class="cf-row">
                                 <div class="cf-field">
                                     <label for="cf-name">Full Name <span>*</span></label>
-                                    <input type="text" id="cf-name" name="from_name" placeholder="Enter your name" required>
+                                    <input type="text" id="cf-name" name="from_name" placeholder="Enter your name" aria-label="Enter your full name" required>
                                 </div>
                                 <div class="cf-field">
                                     <label for="cf-phone">Phone Number <span>*</span></label>
-                                    <input type="tel" id="cf-phone" name="phone_number" placeholder="+91 XXXXX XXXXX" required>
+                                    <input type="tel" id="cf-phone" name="phone_number" placeholder="+91 XXXXX XXXXX" aria-label="Enter your phone number" required>
                                 </div>
                             </div>
                             <div class="cf-row">
                                 <div class="cf-field">
                                     <label for="cf-email">Email Address</label>
-                                    <input type="email" id="cf-email" name="from_email" placeholder="your@email.com">
+                                    <input type="email" id="cf-email" name="from_email" placeholder="your@email.com" aria-label="Enter your email address">
                                 </div>
                                 <div class="cf-field">
                                     <label for="cf-course">Interested Course</label>
-                                    <select id="cf-course" name="course">
+                                    <select id="cf-course" name="course" aria-label="Select the TNPSC course you are interested in">
                                         <option value="">Select a course</option>
                                         <option value="group1">TNPSC Group 1</option>
                                         <option value="group2">TNPSC Group 2 / 2A</option>
@@ -103,7 +104,7 @@ export const Contact = () => {
                             </div>
                             <div class="cf-field cf-full">
                                 <label for="cf-message">Your Message</label>
-                                <textarea id="cf-message" name="message" rows="4" placeholder="Tell us about your preparation level, goals, or any questions..."></textarea>
+                                <textarea id="cf-message" name="message" rows="4" placeholder="Tell us about your preparation level, goals, or any questions..." aria-label="Enter your message or questions"></textarea>
                             </div>
                             <button type="submit" class="cf-submit" id="submitBtn">
                                 <i class="fas fa-paper-plane"></i> <span class="btn-text">Send Message</span>

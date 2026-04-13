@@ -30,6 +30,9 @@ import { Faculty } from './components/Faculty/Faculty.js';
 import { YouTubeFeed, initYouTubeFeed } from './components/YouTubeFeed/YouTubeFeed.js';
 import { Contact, initContactForm } from './components/Contact/Contact.js';
 import { Footer } from './components/Footer/Footer.js';
+import { Breadcrumbs } from './components/Common/Breadcrumbs.js';
+import { ExamCalendar } from './components/Exams/ExamCalendar.js';
+import { PlannerPage } from './components/Exams/PlannerPage.js';
 
 // App element
 const app = document.getElementById('app');
@@ -38,7 +41,8 @@ const app = document.getElementById('app');
 const dailySubPages = ['daily-ca', 'exam-notifications', 'important-pdfs', 'practice-questions'];
 const freeSubPages = ['free-pdfs', 'free-notes', 'free-pyq', 'free-tests'];
 const resultSubPages = ['success-wall'];
-const subPages = dailySubPages.concat(freeSubPages).concat(resultSubPages);
+const plannerSubPages = ['planner-2026'];
+const subPages = dailySubPages.concat(freeSubPages).concat(resultSubPages).concat(plannerSubPages);
 
 function getPage() {
     const hash = window.location.hash.slice(1);
@@ -50,29 +54,84 @@ function getPage() {
 
 function updateMetadata(page) {
     const titles = {
-        'home': 'Sahul TNPSC | Top TNPSC Coaching in Tamil Nadu (Group 1, 2, 4 & VAO)',
-        'daily-ca': 'Daily Current Affairs | Sahul TNPSC Circle',
-        'exam-notifications': 'TNPSC Exam Notifications & Results 2025 | Sahul TNPSC',
-        'important-pdfs': 'Free TNPSC Study Materials & PDF Notes | Sahul TNPSC',
-        'practice-questions': 'TNPSC Practice Questions & Mock Tests | Sahul TNPSC',
-        'free-pdfs': 'Free TNPSC PDFs & Resources | Sahul TNPSC',
-        'free-notes': 'Subject-wise TNPSC Notes | Sahul TNPSC',
-        'free-pyq': 'TNPSC Previous Year Question Papers | Sahul TNPSC',
-        'free-tests': 'Free Online TNPSC Mock Tests | Sahul TNPSC'
+        'home': 'Best TNPSC Coaching Centre in Tamil Nadu | 2026 Selection Batch | Sahul TNPSC Circle',
+        'daily-ca': 'Daily Current Affairs for TNPSC 2026 | Top Academy Tamil Nadu',
+        'exam-notifications': 'TNPSC Exam Notifications 2026 | Group 1, 2, 4 | Sahul TNPSC Circle',
+        'important-pdfs': '2026 TNPSC Study Materials & PDF Notes Download | Free Resources',
+        'practice-questions': 'TNPSC Practice Questions & Mock Tests Online',
+        'free-pdfs': 'Free TNPSC Resource Center | Sahul Academy',
+        'free-notes': 'Subject-wise Coaching Notes for TNPSC Exams',
+        'free-pyq': 'TNPSC Previous Year Question Papers with Answers',
+        'free-tests': 'Best Free TNPSC Online Test Series',
+        'success-wall': 'Hall of Victory: 450+ Officers Produced | Sahul TNPSC Circle Results',
+        'planner-2026': 'TNPSC Annual Planner 2026 PDF Download | Official Exam Schedule'
     };
 
     const descriptions = {
         'home': 'Expert TNPSC coaching for Group 1, 2, 4 and VAO across Tamil Nadu. Online and Offline classes with expert mentorship.',
-        'daily-ca': 'Stay updated with TNPSC-focused current affairs curated daily by our expert mentors.',
-        'exam-notifications': 'Stay informed with the latest TNPSC exam notifications, results, and hall ticket updates.',
-        'important-pdfs': 'Download essential TNPSC study materials and PDF notes for all competitive exams.',
-        'practice-questions': 'Improve your score with topic-wise TNPSC practice questions and detailed explanations.'
+        'daily-ca': 'Access daily TNPSC focused current affairs curated by subject experts. Stay ahead in your preparation.',
+        'exam-notifications': 'Latest update on TNPSC notifications, exam dates, results, and curriculum changes.',
+        'important-pdfs': 'Download essential PDFs including Samacheer Kalvi books, study notes, and shortcut materials.',
+        'practice-questions': 'Test your knowledge with daily practice questions focused on recent TNPSC trends.',
+        'planner-2026': 'Download the official TNPSC Annual Planner 2026 PDF. Check tentative dates for Group 1, 2, 4 and VAO notifications.'
     };
 
     document.title = titles[page] || titles['home'];
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
         metaDesc.setAttribute('content', descriptions[page] || descriptions['home']);
+    }
+
+    // Update Canonical
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (canonical) {
+        canonical.setAttribute('href', `https://sahultnpsc.com/${page === 'home' ? '' : '#' + page}`);
+    }
+
+    // Dynamic Breadcrumb Schema
+    if (page !== 'home') {
+        const schema = {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://sahultnpsc.com/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": titles[page],
+                    "item": `https://sahultnpsc.com/#${page}`
+                }
+            ]
+        };
+        const scriptId = 'dynamic-breadcrumb-schema';
+        let script = document.getElementById(scriptId);
+        if (script) script.remove();
+        script = document.createElement('script');
+        script.id = scriptId;
+        script.type = 'application/ld+json';
+        script.text = JSON.stringify(schema);
+        document.head.appendChild(script);
+
+        // SiteNavigationElement for dynamic subpages
+        const navSchema = {
+            "@context": "https://schema.org",
+            "@type": "SiteNavigationElement",
+            "name": titles[page],
+            "url": `https://sahultnpsc.com/#${page}`
+        };
+        const navScriptId = 'dynamic-nav-schema';
+        let navScript = document.getElementById(navScriptId);
+        if (navScript) navScript.remove();
+        navScript = document.createElement('script');
+        navScript.id = navScriptId;
+        navScript.type = 'application/ld+json';
+        navScript.text = JSON.stringify(navSchema);
+        document.head.appendChild(navScript);
     }
 }
 
@@ -85,7 +144,7 @@ function render() {
     if (page === 'home') {
         // Optimized Progressive Rendering: Paint Above-the-Fold content first
         const aboveFold = Header() + '<main>' + Hero() + '</main>' + Footer();
-        const everything = Header() + '<main>' + Hero() + Features() + Exams() + DailyUpdates() + FreeResources() + OfficerChats() + Results() + Faculty() + YouTubeFeed() + Contact() + '</main>' + Footer();
+        const everything = Header() + '<main>' + Hero() + Features() + Exams() + ExamCalendar() + DailyUpdates() + FreeResources() + OfficerChats() + Results() + Faculty() + Contact() + '</main>' + Footer();
         
         if (hash && hash !== '#') {
             // If user is jumping to a section, render all at once
@@ -96,7 +155,7 @@ function render() {
             requestAnimationFrame(() => {
                 const main = app.querySelector('main');
                 if (main) {
-                    main.innerHTML = Hero() + Features() + Exams() + DailyUpdates() + FreeResources() + OfficerChats() + Results() + Faculty() + YouTubeFeed() + Contact();
+                    main.innerHTML = Hero() + Features() + Exams() + ExamCalendar() + DailyUpdates() + FreeResources() + OfficerChats() + Results() + Faculty() + Contact();
                 }
             });
         }
@@ -126,12 +185,18 @@ function render() {
             }
         }
         if (!subPageContent) {
+            for (var k = 0; k < plannerSubPages.length; k++) {
+                if (plannerSubPages[k] === page) { subPageContent = PlannerPage(); break; }
+            }
+        }
+        if (!subPageContent) {
             if (page === 'success-wall') { subPageContent = SuccessWallPage(); }
         }
 
         app.innerHTML =
             Header() +
             '<main>' +
+            Breadcrumbs(page) +
             subPageContent +
             '</main>' +
             Footer();
@@ -140,7 +205,25 @@ function render() {
     }
 
     // Re-initialize dynamic behaviors after the current paint cycle
-    requestAnimationFrame(init);
+    requestAnimationFrame(() => {
+        init();
+        // Technical SEO: Pre-fetch sub-page resources once main content is loaded
+        if (window.requestIdleCallback) {
+            window.requestIdleCallback(() => {
+                const assets = [
+                    '/assets/tnpsc_hero.png',
+                    '/assets/tnpsc_arambam.png',
+                    '/assets/tnpsc_vithai.png'
+                ];
+                assets.forEach(asset => {
+                    const link = document.createElement('link');
+                    link.rel = 'prefetch';
+                    link.href = asset;
+                    document.head.appendChild(link);
+                });
+            });
+        }
+    });
 }
 
 // Initial render
@@ -227,7 +310,6 @@ function handleNavbarScroll() {
 function init() {
     initScrollReveal();
     handleNavbarScroll();
-    initYouTubeFeed();
     initOfficerMosaic(); // Initialize gallery logic on all pages
     initContactForm(); // Initialize contact form logic
 }

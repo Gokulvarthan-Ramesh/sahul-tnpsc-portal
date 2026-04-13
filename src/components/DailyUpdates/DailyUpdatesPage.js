@@ -7,12 +7,12 @@ export const DailyUpdatesPage = (page) => {
       color: '#4302ae',
       description: 'Stay updated with the latest TNPSC-focused daily current affairs curated specifically for Group 1, 2, 4 and VAO exams by our expert mentors in Tamil Nadu, serving students in Chennai, Madurai, and Trichy.',
       items: [
-        { date: 'April 10, 2025', title: 'Tamil Nadu State Budget 2025-26 - Critical Analysis for Group 1 & 2', tag: 'State', tagColor: '#4302ae' },
-        { date: 'April 9, 2025', title: 'Supreme Court Landmark Verdict on Reservation Policy - UPSC/TNPSC relevance', tag: 'National', tagColor: '#fe4c1c' },
-        { date: 'April 8, 2025', title: 'New Governor of Tamil Nadu - Constitutional Powers & Appointment Facts', tag: 'State', tagColor: '#4302ae' },
-        { date: 'April 7, 2025', title: 'India-EU Free Trade Agreement 2025 - Impact on Indian Economy', tag: 'International', tagColor: '#00befa' },
-        { date: 'April 6, 2025', title: 'RBI Monetary Policy Update April 2025 - Repo Rate & Inflation stats', tag: 'Economy', tagColor: '#ff007a' },
-        { date: 'April 5, 2025', title: 'UNESCO Heritage Site - New Addition from India', tag: 'National', tagColor: '#fe4c1c' },
+        { date: 'April 10, 2026', title: 'Tamil Nadu State Budget 2026-27 - Critical Analysis for Group 1 & 2', tag: 'State', tagColor: '#4302ae' },
+        { date: 'April 9, 2026', title: 'Supreme Court Landmark Verdict on Reservation Policy - UPSC/TNPSC relevance', tag: 'National', tagColor: '#fe4c1c' },
+        { date: 'April 8, 2026', title: 'New Governor of Tamil Nadu - Constitutional Powers & Appointment Facts', tag: 'State', tagColor: '#4302ae' },
+        { date: 'April 7, 2026', title: 'India-EU Free Trade Agreement 2026 - Impact on Indian Economy', tag: 'International', tagColor: '#00befa' },
+        { date: 'April 6, 2026', title: 'RBI Monetary Policy Update April 2026 - Repo Rate & Inflation stats', tag: 'Economy', tagColor: '#ff007a' },
+        { date: 'April 5, 2026', title: 'UNESCO Heritage Site - New Addition from India', tag: 'National', tagColor: '#fe4c1c' },
       ]
     },
     'exam-notifications': {
@@ -22,12 +22,12 @@ export const DailyUpdatesPage = (page) => {
       color: '#fe4c1c',
       description: 'Never miss a TNPSC exam date, hall ticket release, or result announcement. We track all official announcements from the Tamil Nadu Public Service Commission.',
       items: [
-        { date: 'April 10, 2025', title: 'Official TNPSC Group 1 Prelims 2025 Notification - Application Dates & Syllabus', tag: 'Group 1', tagColor: '#4302ae' },
-        { date: 'April 8, 2025', title: 'TNPSC Group 2A Interview Hall Ticket 2025 - Download Link & Instructions', tag: 'Group 2A', tagColor: '#fe4c1c' },
-        { date: 'April 5, 2025', title: 'TNPSC Group 4 Results 2024 - District-wise Pass Percentage & Cutoff', tag: 'Group 4', tagColor: '#00befa' },
-        { date: 'April 3, 2025', title: 'VAO Village Administrative Officer Exam 2025 - Notification & Vacancy List', tag: 'VAO', tagColor: '#ff007a' },
-        { date: 'April 1, 2025', title: 'Combined Engineering Services 2025 - Direct Recruitment Notification', tag: 'CES', tagColor: '#4302ae' },
-        { date: 'March 28, 2025', title: 'Group 1 Mains 2024 - Final Results Published', tag: 'Group 1', tagColor: '#4302ae' },
+        { date: 'April 10, 2026', title: 'Official TNPSC Group 1 Prelims 2026 Notification - Application Dates & Syllabus', tag: 'Group 1', tagColor: '#4302ae' },
+        { date: 'April 8, 2026', title: 'TNPSC Group 2A Interview Hall Ticket 2026 - Download Link & Instructions', tag: 'Group 2A', tagColor: '#fe4c1c' },
+        { date: 'April 5, 2026', title: 'TNPSC Group 4 Results 2024 - District-wise Pass Percentage & Cutoff', tag: 'Group 4', tagColor: '#00befa' },
+        { date: 'April 3, 2026', title: 'VAO Village Administrative Officer Exam 2026 - Notification & Vacancy List', tag: 'VAO', tagColor: '#ff007a' },
+        { date: 'April 1, 2026', title: 'Combined Engineering Services 2026 - Direct Recruitment Notification', tag: 'CES', tagColor: '#4302ae' },
+        { date: 'March 28, 2026', title: 'Group 1 Mains 2024 - Final Results Published', tag: 'Group 1', tagColor: '#4302ae' },
       ]
     },
     'important-pdfs': {
@@ -37,7 +37,7 @@ export const DailyUpdatesPage = (page) => {
       color: '#ff007a',
       description: 'Download free study materials, previous year papers, and formula sheets.',
       items: [
-        { date: 'New', title: 'TNPSC Group 1 Prelims - Complete GK Notes (2025)', tag: 'Notes', tagColor: '#4302ae' },
+        { date: 'New', title: 'TNPSC Group 1 Prelims - Complete GK Notes (2026)', tag: 'Notes', tagColor: '#4302ae' },
         { date: 'New', title: 'Tamil Nadu History - 100 Important Questions', tag: 'Questions', tagColor: '#fe4c1c' },
         { date: 'Popular', title: 'Indian Polity - Laxmikanth Summary (Tamil)', tag: 'Summary', tagColor: '#00befa' },
         { date: 'Popular', title: 'Aptitude & Mental Ability - Formula Sheet', tag: 'Formulae', tagColor: '#ff007a' },
@@ -55,7 +55,7 @@ export const DailyUpdatesPage = (page) => {
         { date: '50 Qs', title: 'Indian National Movement - Practice Set 1', tag: 'History', tagColor: '#4302ae' },
         { date: '40 Qs', title: 'Tamil Nadu Geography - District Wise Questions', tag: 'Geography', tagColor: '#fe4c1c' },
         { date: '30 Qs', title: 'Indian Constitution - Fundamental Rights Quiz', tag: 'Polity', tagColor: '#00befa' },
-        { date: '25 Qs', title: 'Current Affairs - March 2025 Monthly Test', tag: 'CA', tagColor: '#ff007a' },
+        { date: '25 Qs', title: 'Current Affairs - March 2026 Monthly Test', tag: 'CA', tagColor: '#ff007a' },
         { date: '50 Qs', title: 'General Science - Physics & Chemistry Combo', tag: 'Science', tagColor: '#4302ae' },
         { date: '40 Qs', title: 'Aptitude - Time, Speed & Distance Problems', tag: 'Maths', tagColor: '#fe4c1c' },
       ]

@@ -58,46 +58,55 @@ export const initOfficerMosaic = () => {
     const showMoreBtn = document.getElementById('show-more-mosaic');
     const lightbox = document.getElementById('chat-lightbox');
     const lightboxImg = document.getElementById('lightbox-img');
-    const closeBtn = lightbox.querySelector('.lightbox-close');
-
-    if (!grid) return;
-
-    // 1. Native Lazy Loading is now used via the loading='lazy' attribute.
-    // Manual observer removed for better performance and reliability.
 
     // 2. See More Logic
-    showMoreBtn.addEventListener('click', () => {
-        grid.classList.toggle('expanded');
-        if (grid.classList.contains('expanded')) {
-            showMoreBtn.textContent = 'Show Less';
-        } else {
-            showMoreBtn.textContent = 'View Entire Success Wall';
-            grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-    });
+    if (showMoreBtn && grid) {
+        showMoreBtn.addEventListener('click', () => {
+            grid.classList.toggle('expanded');
+            if (grid.classList.contains('expanded')) {
+                showMoreBtn.textContent = 'Show Less';
+            } else {
+                showMoreBtn.textContent = 'View Entire Success Wall';
+                grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    }
 
     // 3. Lightbox Logic
+    if (lightbox && lightboxImg) {
+        const closeBtn = lightbox.querySelector('.lightbox-close');
+
+        const closeLightbox = () => {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        };
+
+        if (closeBtn) {
+            closeBtn.addEventListener('click', closeLightbox);
+        }
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) closeLightbox();
+        });
+
+        // ESC key closes lightbox
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+    }
+
+    // Modal Trigger Logic
     document.querySelectorAll('.mosaic-item').forEach(item => {
         item.addEventListener('click', () => {
             const imgSrc = item.getAttribute('data-image');
-            lightboxImg.src = imgSrc;
-            lightbox.classList.add('active');
-            document.body.style.overflow = 'hidden'; // Prevent scroll
+            const lightbox = document.getElementById('chat-lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+
+            if (lightbox && lightboxImg) {
+                lightboxImg.src = imgSrc;
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
         });
-    });
-
-    const closeLightbox = () => {
-        lightbox.classList.remove('active');
-        document.body.style.overflow = '';
-    };
-
-    closeBtn.addEventListener('click', closeLightbox);
-    lightbox.addEventListener('click', (e) => {
-        if (e.target === lightbox) closeLightbox();
-    });
-
-    // ESC key closes lightbox
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') closeLightbox();
     });
 };
