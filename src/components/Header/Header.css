@@ -9,19 +9,19 @@
   align-items: center;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 2000;
-  background: rgba(15, 2, 37, 0.15); /* Transparent initial state */
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  overflow: visible; /* Must remain visible so dropdown handles can extend beyond container */
+  background: rgba(15, 2, 37, 0.1); /* Ultra-transparent initial state */
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  overflow: visible;
 }
 
 .main-header.sticky {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.85);
   height: 75px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(25px) saturate(150%);
 }
 
 .container-header {
@@ -103,7 +103,7 @@
   text-transform: uppercase;
   text-decoration: none !important;
   letter-spacing: 0.5px;
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   line-height: 1;
 }
 

@@ -20,12 +20,12 @@ export const Header = () => {
             <div class="header-actions">
                 <ul class="nav-list-right">
                     <li>
-                        <a href="tel:+917598242374" class="btn-round-call">
+                        <a href="tel:+917598607516" class="btn-round-call">
                             <i class="fas fa-phone-alt"></i>
                         </a>
                     </li>
                     <li class="desktop-only-btn">
-                        <a href="https://wa.me/917598242374?text=Hi, I'd like to get more information about Sahul TNPSC Circle and the 2026 batches." class="btn-main quote-btn">
+                        <a href="https://wa.me/917598607516?text=Hi, I'd like to get more information about Sahul TNPSC Circle and the 2026 batches." class="btn-main quote-btn">
                             Join Now <span class="circle"></span>
                         </a>
                     </li>

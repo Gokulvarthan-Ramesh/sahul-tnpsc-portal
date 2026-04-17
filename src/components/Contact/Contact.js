@@ -26,7 +26,7 @@ export const Contact = () => {
                             <div class="ci-icon ci-icon-2"><i class="fas fa-phone-alt"></i></div>
                             <div class="ci-text">
                                 <h4>Call Us</h4>
-                                <a href="tel:+917598242374" class="ci-link" itemprop="telephone">+91 75982 42374</a>
+                                <a href="tel:+917598607516" class="ci-link" itemprop="telephone">+91 75986 07516</a>
                             </div>
                         </div>
 
@@ -34,7 +34,7 @@ export const Contact = () => {
                             <div class="ci-icon ci-icon-3"><i class="fab fa-whatsapp"></i></div>
                             <div class="ci-text">
                                 <h4>WhatsApp</h4>
-                                <a href="https://wa.me/917598242374" class="ci-link">Chat with us instantly</a>
+                                <a href="https://wa.me/917598607516" class="ci-link">Chat with us instantly</a>
                             </div>
                         </div>
 
@@ -47,7 +47,7 @@ export const Contact = () => {
                         </div>
 
                         <!-- WhatsApp Big Button -->
-                        <a href="https://wa.me/917598242374" class="whatsapp-big-btn" target="_blank">
+                        <a href="https://wa.me/917598607516" class="whatsapp-big-btn" target="_blank">
                             <i class="fab fa-whatsapp"></i>
                             <span>Message Us on WhatsApp</span>
                         </a>
@@ -116,7 +116,7 @@ export const Contact = () => {
                             <div class="cfs-icon"><i class="fas fa-check-circle"></i></div>
                             <h4>Message Sent Successfully!</h4>
                             <p>Our team will contact you within 24 hours. You can also reach us directly on WhatsApp.</p>
-                            <a href="https://wa.me/917598242374" class="whatsapp-big-btn" target="_blank">
+                            <a href="https://wa.me/917598607516" class="whatsapp-big-btn" target="_blank">
                                 <i class="fab fa-whatsapp"></i>
                                 <span>Chat on WhatsApp Now</span>
                             </a>
@@ -159,7 +159,7 @@ export const initContactForm = () => {
             `*Message:* ${message}`;
 
         // 3. Open WhatsApp
-        const whatsappUrl = `https://wa.me/917598242374?text=${whatsappMsg}`;
+        const whatsappUrl = `https://wa.me/917598607516?text=${whatsappMsg}`;
         window.open(whatsappUrl, '_blank');
 
         // 4. Reset Form (Optional)

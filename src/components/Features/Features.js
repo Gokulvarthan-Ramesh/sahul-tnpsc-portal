@@ -19,7 +19,7 @@ export const Features = () => {
                             <h3 itemprop="name">TNPSC Group 1</h3>
                             <div class="course-details">
                                 <ul itemprop="syllabus">
-                                    <li><i class="fas fa-book-open"></i> <strong>Subjects:</strong> GS, Unit 8 & 9, Maths</li>
+                                    <li><i class="fas fa-book-open"></i> <strong>Subjects:</strong> GS, Maths</li>
                                     <li><i class="fas fa-clock"></i> <strong>Duration:</strong> <span itemprop="duration">6 Months</span></li>
                                     <li><i class="fas fa-history"></i> <strong>Validity:</strong> 18 Months</li>
                                     <li><i class="fas fa-wallet"></i> <strong>Fees:</strong> <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">₹ <span itemprop="price">5555</span><meta itemprop="priceCurrency" content="INR"></span> (EMI Available)</li>
@@ -27,7 +27,7 @@ export const Features = () => {
                                     <li><i class="fas fa-user-tie"></i> <strong>Faculty:</strong> SAHUL HAMMEED Sir, BOOPATHY RAJA SIR, DIVYA MAM, SHEIK SIR & MANIKANDAN SIR</li>
                                 </ul>
                             </div>
-                            <a href="https://wa.me/917598242374?text=Hi, I want to enroll in the TNPSC Group 1 Comprehensive Selection Batch 2026." class="btn-main mt-3 w-100 text-center" aria-label="Enroll in TNPSC Group 1 Coaching">Enroll Now</a>
+                            <a href="https://wa.me/917598607516?text=Hi, I want to enroll in the TNPSC Group 1 Comprehensive Selection Batch 2026." class="btn-main mt-3 w-100 text-center" aria-label="Enroll in TNPSC Group 1 Coaching">Enroll Now</a>
                         </div>
                     </div>
                 </div>
@@ -51,7 +51,7 @@ export const Features = () => {
                                     <li><i class="fas fa-user-tie"></i> <strong>Faculty:</strong> BOOPATHY RAJA SIR, SAHUL HAMMEED Sir, DIVYA MAM, SHEIK SIR & MANIKANDAN SIR</li>
                                 </ul>
                             </div>
-                            <a href="https://wa.me/917598242374?text=Hi, I want to enroll in the TNPSC Group 2 & 2A Master Program 2026." class="btn-main mt-3 w-100 text-center" aria-label="Enroll in TNPSC Group 2 Coaching">Enroll Now</a>
+                            <a href="https://wa.me/917598607516?text=Hi, I want to enroll in the TNPSC Group 2 & 2A Master Program 2026." class="btn-main mt-3 w-100 text-center" aria-label="Enroll in TNPSC Group 2 Coaching">Enroll Now</a>
                         </div>
                     </div>
                 </div>
@@ -75,7 +75,7 @@ export const Features = () => {
                                     <li><i class="fas fa-user-tie"></i> <strong>Faculty:</strong> MANIKANDAN SIR, SHEIK SIR, SAHUL HAMMEED Sir, BOOPATHY RAJA SIR & DIVYA MAM</li>
                                 </ul>
                             </div>
-                            <a href="https://wa.me/917598242374?text=Hi, I want to enroll in the TNPSC Group 4 & VAO Goal Program 2026." class="btn-main mt-3 w-100 text-center" aria-label="Enroll in TNPSC Group 4 and VAO Coaching">Enroll Now</a>
+                            <a href="https://wa.me/917598607516?text=Hi, I want to enroll in the TNPSC Group 4 & VAO Goal Program 2026." class="btn-main mt-3 w-100 text-center" aria-label="Enroll in TNPSC Group 4 and VAO Coaching">Enroll Now</a>
                         </div>
                     </div>
                 </div>

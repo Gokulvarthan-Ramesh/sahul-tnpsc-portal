@@ -10,13 +10,16 @@
   --bg-dark: #101010;
   --bg-light: #f8fdff;
   
-  --gradient-primary: linear-gradient(to right, #8e2de2 0%, #4a00e0 100%);
-  --gradient-secondary: linear-gradient(to right, #f92c8b 0%, #b02cd6 100%);
+  --gradient-primary: linear-gradient(135deg, #8e2de2 0%, #4a00e0 100%);
+  --gradient-secondary: linear-gradient(135deg, #f92c8b 0%, #b02cd6 100%);
+  --gradient-glass: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
   
-  --shadow-main: 0 10px 15px 0 rgba(142, 45, 226, 0.2);
+  --shadow-main: 0 10px 40px rgba(142, 45, 226, 0.15);
+  --shadow-glow: 0 0 20px rgba(142, 45, 226, 0.3);
   --radius-sm: 8px;
   --radius-lg: 30px;
   --radius-xl: 40px;
+  --transition-smooth: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 * {
@@ -154,8 +157,13 @@ ul {
 
 .btn-main:hover {
   background: var(--primary-alt);
-  transform: translateY(-3px);
-  color: #fff;
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(67, 2, 174, 0.25);
+  color: #fff !important;
+}
+
+.btn-main:active {
+  transform: translateY(-2px);
 }
 
 .btn-outline {
@@ -175,9 +183,11 @@ ul {
 }
 
 .btn-outline:hover {
-  background: var(--primary-alt);
-  color: #fff;
-  border-color: var(--primary-alt);
+  background: var(--gradient-primary);
+  color: #fff !important;
+  border-color: transparent;
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-main);
 }
 
 /* Floating Actions */

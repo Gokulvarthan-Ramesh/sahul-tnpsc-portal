@@ -112,7 +112,7 @@ export const ExamCalendar = () => {
                                 <p class="calendar-note">Looking for PDF Syllabus & Study Plan? Join our WhatsApp channel for instant updates.</p>
                             </div>
                             <div class="col-md-4 text-right mobile-center">
-                                <a href="https://wa.me/917598242374?text=Hi, I just saw the 2026 Exam Calendar. Can I get a free study plan for my preparation?" class="btn-main-sm mobile-full">Get Free Study Plan <i class="fab fa-whatsapp"></i></a>
+                                <a href="https://wa.me/917598607516?text=Hi, I just saw the 2026 Exam Calendar. Can I get a free study plan for my preparation?" class="btn-main-sm mobile-full">Get Free Study Plan <i class="fab fa-whatsapp"></i></a>
                             </div>
                         </div>
                     </div>

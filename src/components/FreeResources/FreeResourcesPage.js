@@ -7,11 +7,11 @@ export const FreeResourcesPage = (page) => {
       color: '#ea3943',
       description: 'Download high-quality TNPSC study materials, syllabus PDFs, and revision notes for students in Chennai, Coimbatore, and Pudukottai — completely free.',
       items: [
-        { date: 'New', title: 'TNPSC Group 1 Exam - Complete General Studies PDF Download (2026)', tag: 'Group 1', tagColor: '#4302ae', size: '12 MB' },
-        { date: 'New', title: 'Indian Constitution - Important Articles & Schedules PDF Study Material', tag: 'Polity', tagColor: '#fe4c1c', size: '4 MB' },
+        { date: 'New', title: 'ANICIENT INDIA-FULL PDF', tag: 'Group 1', tagColor: '#4302ae', size: '12 MB' },
+        { date: 'New', title: 'polity - introduction 1', tag: 'Polity', tagColor: '#fe4c1c', size: '4 MB' },
         { date: 'Popular', title: 'Unit 8 & 9 Tamil Nadu History - Complete School Book Notes (Tamil)', tag: 'History', tagColor: '#ea3943', size: '8 MB' },
         { date: 'Popular', title: 'TNPSC Aptitude & Mental Ability - Shortcut Formulas PDF Guide', tag: 'Aptitude', tagColor: '#00befa', size: '2 MB' },
-        { date: 'Updated', title: 'Indian Economy & Tamil Nadu Budget 2026 - Exam Special Notes PDF', tag: 'Economy', tagColor: '#ff007a', size: '5 MB' },
+        { date: 'Updated', title: 'INTRODUCTION TO INDIAN ECONOMICS', tag: 'Economy', tagColor: '#ff007a', size: '5 MB' },
         { date: 'Updated', title: 'Science & Technology - One Liner PDF', tag: 'Science', tagColor: '#4302ae', size: '3 MB' },
         { date: 'Essential', title: 'Geography - India & Tamil Nadu Maps Collection', tag: 'Geography', tagColor: '#fe4c1c', size: '15 MB' },
         { date: 'Essential', title: 'Current Affairs 2024 - Yearly Compilation PDF', tag: 'CA', tagColor: '#00befa', size: '20 MB' },
@@ -109,10 +109,32 @@ export const FreeResourcesPage = (page) => {
                         <span class="subpage-size">${item.size}</span>
                       </div>
                       <h3>${item.title}</h3>
-                      <a href="https://wa.me/917598242374" class="subpage-item-link" style="color: ${data.color}">
-                        Get on WhatsApp <i class="fas fa-arrow-right"></i>
-                      </a>
+                      <div class="subpage-item-actions">
+                        ${(() => {
+                          let pdfFile = 'ANICIENT INDIA-FULL PDF.pdf'; // Default fallback
+                          const titleLower = item.title.toLowerCase();
+                          const tagLower = item.tag.toLowerCase();
+                          
+                          if (titleLower.includes('polity') || tagLower.includes('polity') || titleLower.includes('constitution')) {
+                            pdfFile = 'polity - introduction 1.pdf';
+                          } else if (titleLower.includes('economy') || tagLower.includes('economy') || titleLower.includes('budget')) {
+                            pdfFile = 'INTRODUCTION TO INDIAN ECONOMICS.pdf';
+                          } else if (titleLower.includes('history') || tagLower.includes('india') || tagLower.includes('history')) {
+                            pdfFile = 'ANICIENT INDIA-FULL PDF.pdf';
+                          }
+                          
+                          return `
+                            <a href="/assets/pdf/${encodeURIComponent(pdfFile)}" download="${item.title}.pdf" class="subpage-item-link" style="color: ${data.color}">
+                              <i class="fas fa-download"></i> Download PDF
+                            </a>
+                          `;
+                        })()}
+                        <a href="https://wa.me/917598607516" target="_blank" rel="noopener noreferrer" class="subpage-item-link whatsapp-link">
+                          <i class="fab fa-whatsapp"></i> Get on WhatsApp
+                        </a>
+                      </div>
                     </div>
+
                   </div>
                 `).join('')}
               </div>
@@ -125,12 +147,12 @@ export const FreeResourcesPage = (page) => {
                   </div>
                   <h4>Get Free Resources</h4>
                   <p>Join our WhatsApp group for instant access to all free materials.</p>
-                  <a href="https://wa.me/917598242374" class="btn-main">Join WhatsApp Group</a>
+                  <a href="https://wa.me/917598607516" target="_blank" rel="noopener noreferrer" class="btn-main">Join WhatsApp Group</a>
                 </div>
                 <div class="sidebar-card sidebar-cta">
                   <h4><i class="fas fa-bullseye" style="color: #4302ae"></i> Start Your Preparation</h4>
                   <p>Enroll in our structured coaching program for guaranteed selection.</p>
-                  <a href="https://wa.me/917598242374" class="btn-outline">Enquire Now</a>
+                  <a href="https://wa.me/917598607516" target="_blank" rel="noopener noreferrer" class="btn-outline">Enquire Now</a>
                 </div>
               </div>
             </div>

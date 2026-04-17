@@ -59,10 +59,11 @@ function updateMetadata(page) {
         'exam-notifications': 'TNPSC Exam Notifications 2026 | Group 1, 2, 4 | Sahul TNPSC Circle',
         'important-pdfs': '2026 TNPSC Study Materials & PDF Notes Download | Free Resources',
         'practice-questions': 'TNPSC Practice Questions & Mock Tests Online',
-        'free-pdfs': 'Free TNPSC Resource Center | Sahul Academy',
+        'free-pdfs': 'Free TNPSC Resource Center | Sahul TNPSC Circle',
         'free-notes': 'Subject-wise Coaching Notes for TNPSC Exams',
         'free-pyq': 'TNPSC Previous Year Question Papers with Answers',
         'free-tests': 'Best Free TNPSC Online Test Series',
+        'home-youtube': 'Watch Latest TNPSC Coaching Sessions Online',
         'success-wall': 'Hall of Victory: 450+ Officers Produced | Sahul TNPSC Circle Results',
         'planner-2026': 'TNPSC Annual Planner 2026 PDF Download | Official Exam Schedule'
     };
@@ -73,14 +74,52 @@ function updateMetadata(page) {
         'exam-notifications': 'Latest update on TNPSC notifications, exam dates, results, and curriculum changes.',
         'important-pdfs': 'Download essential PDFs including Samacheer Kalvi books, study notes, and shortcut materials.',
         'practice-questions': 'Test your knowledge with daily practice questions focused on recent TNPSC trends.',
+        'free-pdfs': 'Download free TNPSC General English, Tamil, and GS study materials in PDF format.',
+        'free-notes': 'Comprehensive subject-wise notes for TNPSC Group exams. Master History, Polity, and Geography.',
+        'free-pyq': 'Previous Year Question papers with detailed explanations for TNPSC Group 1, 2, and 4.',
+        'free-tests': 'Participate in our free online test series designed to simulate the real TNPSC exam environment.',
+        'home-youtube': 'Watch high-quality TNPSC coaching videos and live sessions from Sahul TNPSC Circle on YouTube.',
+        'success-wall': 'Look at our Hall of Fame. 450+ students transformed into government officers under Sahul Hammeed Sir.',
         'planner-2026': 'Download the official TNPSC Annual Planner 2026 PDF. Check tentative dates for Group 1, 2, 4 and VAO notifications.'
     };
 
-    document.title = titles[page] || titles['home'];
+    const keywords = {
+        'home': 'Sahul TNPSC Circle, Sahul Hammeed Sir, TNPSC coaching, Group 4 coaching, Group 2 coaching, Pudukottai academy',
+        'daily-ca': 'TNPSC current affairs, daily current affairs Tamil Nadu, TNPSC GK updates 2026',
+        'exam-notifications': 'TNPSC notifications 2026, exam dates, TNPSC results, apply online TNPSC',
+        'planner-2026': 'TNPSC annual planner 2026 pdf, TNPSC exam calendar, notification dates 2026'
+    };
+
+    const title = titles[page] || titles['home'];
+    const desc = descriptions[page] || descriptions['home'];
+    const keyword = keywords[page] || keywords['home'];
+
+    document.title = title;
+
+    // Update Meta Description
     const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) {
-        metaDesc.setAttribute('content', descriptions[page] || descriptions['home']);
-    }
+    if (metaDesc) metaDesc.setAttribute('content', desc);
+
+    // Update Meta Keywords
+    let metaKeywords = document.querySelector('meta[name="keywords"]');
+    if (metaKeywords) metaKeywords.setAttribute('content', keyword);
+
+    // Update Open Graph Tags
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    if (ogTitle) ogTitle.setAttribute('content', title);
+
+    const ogDesc = document.querySelector('meta[property="og:description"]');
+    if (ogDesc) ogDesc.setAttribute('content', desc);
+
+    const ogUrl = document.querySelector('meta[property="og:url"]');
+    if (ogUrl) ogUrl.setAttribute('href', `https://sahultnpsc.com/${page === 'home' ? '' : '#' + page}`);
+
+    // Update Twitter Tags
+    const twTitle = document.querySelector('meta[property="twitter:title"]');
+    if (twTitle) twTitle.setAttribute('content', title);
+
+    const twDesc = document.querySelector('meta[property="twitter:description"]');
+    if (twDesc) twDesc.setAttribute('content', desc);
 
     // Update Canonical
     let canonical = document.querySelector('link[rel="canonical"]');
@@ -144,7 +183,7 @@ function render() {
     if (page === 'home') {
         // Optimized Progressive Rendering: Paint Above-the-Fold content first
         const aboveFold = Header() + '<main>' + Hero() + '</main>' + Footer();
-        const everything = Header() + '<main>' + Hero() + Features() + Exams() + ExamCalendar() + DailyUpdates() + FreeResources() + OfficerChats() + Results() + Faculty() + Contact() + '</main>' + Footer();
+        const everything = Header() + '<main>' + Hero() + Features() + Exams() + ExamCalendar() + YouTubeFeed() + DailyUpdates() + FreeResources() + OfficerChats() + Results() + Faculty() + Contact() + '</main>' + Footer();
         
         if (hash && hash !== '#') {
             // If user is jumping to a section, render all at once
@@ -155,7 +194,7 @@ function render() {
             requestAnimationFrame(() => {
                 const main = app.querySelector('main');
                 if (main) {
-                    main.innerHTML = Hero() + Features() + Exams() + ExamCalendar() + DailyUpdates() + FreeResources() + OfficerChats() + Results() + Faculty() + Contact();
+                    main.innerHTML = Hero() + Features() + Exams() + ExamCalendar() + YouTubeFeed() + DailyUpdates() + FreeResources() + OfficerChats() + Results() + Faculty() + Contact();
                 }
             });
         }
@@ -310,6 +349,7 @@ function handleNavbarScroll() {
 function init() {
     initScrollReveal();
     handleNavbarScroll();
+    initYouTubeFeed(); // Initialize YouTube video feed
     initOfficerMosaic(); // Initialize gallery logic on all pages
     initContactForm(); // Initialize contact form logic
 }
@@ -320,5 +360,19 @@ window.addEventListener('scroll', handleNavbarScroll, { passive: true });
 // Initial execute
 render();
 
+// Handle Back/Forward Cache (bfcache) lifecycle
+window.addEventListener('pageshow', (event) => {
+    // If event.persisted is true, the page was restored from bfcache
+    if (event.persisted) {
+        console.log('Restored from bfcache');
+        init(); // Re-initialize dynamic behaviors
+    }
+});
+
+window.addEventListener('pagehide', () => {
+    // Optionally clean up or pause long-running tasks here
+});
+
 // Routing
 window.addEventListener('hashchange', render);
+

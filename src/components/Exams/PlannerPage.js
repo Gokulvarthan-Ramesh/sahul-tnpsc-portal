@@ -25,13 +25,19 @@ export const PlannerPage = () => {
         <div class="container">
           <div class="row">
             <div class="col-lg-8">
-              <article class="planner-article">
+              <article class="planner-article" itemscope itemtype="https://schema.org/Article">
+                <meta itemprop="mainEntityOfPage" content="https://sahultnpsc.com/#planner-2026">
                 <div class="article-meta">
-                    <span>By Sahul TNPSC Circle</span> • <span>April 13, 2026</span> • <span>TNPSC Updates</span>
+                    <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+                        <span itemprop="name">Sahul TNPSC Circle</span>
+                    </span> • 
+                    <span itemprop="datePublished" content="2026-04-13">April 13, 2026</span> • 
+                    <span>TNPSC Updates</span>
                 </div>
                 
-                <h2>TNPSC Annual Planner 2026 PDF Download: Complete Guide for Tamil Nadu Aspirants</h2>
-                <p>The <strong>TNPSC Annual Planner 2026</strong> provides aspirants with a clear overview of the upcoming TNPSC exams, notification dates, and yearly schedule. This guide explains how to download the planner PDF and use it to plan your preparation effectively.</p>
+                <h2 itemprop="headline">TNPSC Annual Planner 2026 PDF Download: Complete Guide for Tamil Nadu Aspirants</h2>
+                <div itemprop="articleBody">
+                <p itemprop="description">The <strong>TNPSC Annual Planner 2026</strong> provides aspirants with a clear overview of the upcoming TNPSC exams, notification dates, and yearly schedule. This guide explains how to download the planner PDF and use it to plan your preparation effectively.</p>
                 
                 <p>The TNPSC Annual Planner 2026 is an essential resource for every TNPSC aspirant. It provides a clear outline of upcoming exams, tentative dates, and expected notifications. Whether you are preparing for Group 1, Group 2, Group 4, VAO, or Technical examinations, the TNPSC 2026 Annual Planner helps you plan your preparation in an organized and efficient manner.</p>
                 
@@ -120,6 +126,7 @@ export const PlannerPage = () => {
                     <p>You can align study hours with the expected notification and exam months.</p>
                 </div>
 
+                </div>
                 <h3>Conclusion</h3>
                 <p>The TNPSC Annual Planner 2026 is a valuable tool for every TNPSC aspirant who wants to prepare with clarity and confidence. By understanding the tentative exam dates, candidates can plan their preparation effectively. A well-planned strategy significantly improves your chances of success.</p>
               </article>
@@ -132,7 +139,7 @@ export const PlannerPage = () => {
                   </div>
                   <h4>Get PDF Updates</h4>
                   <p>Join our specialized group for the official 2026 planner PDF and study materials.</p>
-                  <a href="https://wa.me/917598242374" class="btn-main">Join WhatsApp Group</a>
+                  <a href="https://wa.me/917598607516" class="btn-main">Join WhatsApp Group</a>
                 </div>
                 <div class="sidebar-card course-cta">
                   <h4>Join Selection Batch</h4>

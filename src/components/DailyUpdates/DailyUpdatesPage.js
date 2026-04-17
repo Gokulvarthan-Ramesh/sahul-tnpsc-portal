@@ -37,12 +37,12 @@ export const DailyUpdatesPage = (page) => {
       color: '#ff007a',
       description: 'Download free study materials, previous year papers, and formula sheets.',
       items: [
-        { date: 'New', title: 'TNPSC Group 1 Prelims - Complete GK Notes (2026)', tag: 'Notes', tagColor: '#4302ae' },
+        { date: 'New', title: 'ANICIENT INDIA-FULL PDF', tag: 'Notes', tagColor: '#4302ae' },
         { date: 'New', title: 'Tamil Nadu History - 100 Important Questions', tag: 'Questions', tagColor: '#fe4c1c' },
-        { date: 'Popular', title: 'Indian Polity - Laxmikanth Summary (Tamil)', tag: 'Summary', tagColor: '#00befa' },
+        { date: 'Popular', title: 'polity - introduction 1', tag: 'Summary', tagColor: '#00befa' },
         { date: 'Popular', title: 'Aptitude & Mental Ability - Formula Sheet', tag: 'Formulae', tagColor: '#ff007a' },
         { date: 'Updated', title: 'Previous Year Papers - Group 2 (2018-2024)', tag: 'PYQ', tagColor: '#4302ae' },
-        { date: 'Updated', title: 'Economy One-Liner Notes - Budget Special', tag: 'Notes', tagColor: '#fe4c1c' },
+        { date: 'Updated', title: 'INTRODUCTION TO INDIAN ECONOMICS', tag: 'Notes', tagColor: '#fe4c1c' },
       ]
     },
     'practice-questions': {
@@ -100,10 +100,32 @@ export const DailyUpdatesPage = (page) => {
                     <div class="subpage-item-body">
                       <span class="subpage-tag" style="background: ${item.tagColor}15; color: ${item.tagColor}">${item.tag}</span>
                       <h3>${item.title}</h3>
-                      <a href="https://wa.me/917598242374" class="subpage-item-link" style="color: ${data.color}">
-                        Get on WhatsApp <i class="fas fa-arrow-right"></i>
-                      </a>
+                      <div class="subpage-item-actions">
+                        ${(() => {
+                          let pdfFile = 'ANICIENT INDIA-FULL PDF.pdf'; // Default fallback
+                          const titleLower = item.title.toLowerCase();
+                          const tagLower = item.tag.toLowerCase();
+                          
+                          if (titleLower.includes('polity') || tagLower.includes('polity') || titleLower.includes('constitution')) {
+                            pdfFile = 'polity - introduction 1.pdf';
+                          } else if (titleLower.includes('economy') || tagLower.includes('economy') || titleLower.includes('budget')) {
+                            pdfFile = 'INTRODUCTION TO INDIAN ECONOMICS.pdf';
+                          } else if (titleLower.includes('history') || tagLower.includes('india') || tagLower.includes('history')) {
+                            pdfFile = 'ANICIENT INDIA-FULL PDF.pdf';
+                          }
+                          
+                          return `
+                            <a href="/assets/pdf/${encodeURIComponent(pdfFile)}" download="${item.title}.pdf" class="subpage-item-link" style="color: ${data.color}">
+                              <i class="fas fa-download"></i> Download PDF
+                            </a>
+                          `;
+                        })()}
+                        <a href="https://wa.me/917598607516" target="_blank" rel="noopener noreferrer" class="subpage-item-link whatsapp-link">
+                          <i class="fab fa-whatsapp"></i> Get on WhatsApp
+                        </a>
+                      </div>
                     </div>
+
                   </div>
                 `).join('')}
               </div>
@@ -116,12 +138,12 @@ export const DailyUpdatesPage = (page) => {
                   </div>
                   <h4>Get Daily Updates</h4>
                   <p>Join our WhatsApp group to receive daily materials directly on your phone.</p>
-                  <a href="https://wa.me/917598242374" class="btn-main">Join WhatsApp Group</a>
+                  <a href="https://wa.me/917598607516" target="_blank" rel="noopener noreferrer" class="btn-main">Join WhatsApp Group</a>
                 </div>
                 <div class="sidebar-card sidebar-cta">
                   <h4><i class="fas fa-phone-alt" style="color: #4302ae"></i> Need Help?</h4>
                   <p>Call us for any queries regarding study materials or exam preparation.</p>
-                  <a href="tel:+917598242374" class="btn-outline">Call +91 75982 42374</a>
+                  <a href="tel:+917598607516" class="btn-outline">Call +91 75986 07516</a>
                 </div>
               </div>
             </div>

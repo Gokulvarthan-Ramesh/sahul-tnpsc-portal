@@ -48,8 +48,8 @@ export const Results = () => {
                         <p>Join 450+ successful officers. Start your journey today.</p>
                     </div>
                     <div class="cta-actions">
-                        <a href="https://wa.me/917598242374?text=Hi, I saw your amazing selection results! I want to join the 2026 Selection Batch. Please share admission details." class="btn-main">Join Now <i class="fas fa-arrow-right"></i></a>
-                        <a href="tel:+917598242374" class="btn-outline btn-outline-light">Call Us</a>
+                        <a href="https://wa.me/917598607516?text=Hi, I saw your amazing selection results! I want to join the 2026 Selection Batch. Please share admission details." class="btn-main">Join Now <i class="fas fa-arrow-right"></i></a>
+                        <a href="tel:+917598607516" class="btn-outline btn-outline-light">Call Us</a>
                     </div>
                 </div>
             </div>
